@@ -44,7 +44,10 @@ namespace CursorModeler
                     Directory.CreateDirectory(folderPath);
 
                 File.WriteAllText(saveFile, generatedClasses);
+                Console.WriteLine($"Generated output content in '{saveFile}'");
             }
+            else
+                Console.WriteLine("This must be called in Visual Studio!");
 
             Console.Read();
         }

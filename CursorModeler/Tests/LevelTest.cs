@@ -41,7 +41,8 @@ namespace CursorModeler.Tests
 
                 if (!item.Contains(splitChar))
                 {
-                    Console.WriteLine($"General node found {item}!");
+                    if (debug)
+                        Console.WriteLine($"General node found {item}!");
 
                     // If parent isn't still defined we are on the top-level recursive call
                     if (isTopLevelCall)
