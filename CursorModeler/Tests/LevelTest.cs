@@ -115,7 +115,7 @@ namespace CursorModeler.Tests
                 else
                 {
                     string realPath = node.CurrentParent + UsedSeparator + node.Value,
-                           field = GenerateField(node.Value, getFieldValue(realPath), realPath);
+                           field = GenerateField(node.Value, getFieldValue(realPath), node.CurrentParent + UsedSeparator);
 
                     sb.AppendLine(indenter + field);
                 }
@@ -164,8 +164,11 @@ namespace CursorModeler.Tests
             if (name.StartsWith("_"))
                 name = name.Substring(1);
 
-            string finalName = isNumber ? "UndefinedFieldName" : name;
-            bool isAlreadyAdded = !fieldNames.Add(realPath);
+            string finalName = isNumber ? $"UndefinedFieldName_{digit}" : name;
+            bool isAlreadyAdded = !fieldNames.Add(realPath + name);
+
+            if (isAlreadyAdded && debug)
+                Console.WriteLine($"Already added field '{realPath + name}'");
 
             return (isAlreadyAdded ? "// " : string.Empty) + $@"public static string {finalName} = ""{fieldValue}"";";
         }

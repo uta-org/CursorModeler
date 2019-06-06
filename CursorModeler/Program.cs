@@ -45,6 +45,7 @@ namespace CursorModeler
             else
                 Console.WriteLine("This must be called in Visual Studio!");
 
+            Console.WriteLine("Press any key to exit...");
             Console.Read();
         }
 
