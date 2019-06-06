@@ -127,7 +127,15 @@ namespace CursorModeler.Tests
             if (string.IsNullOrEmpty(name))
                 return string.Empty;
 
-            return $"public static class {name}{Environment.NewLine}{{";
+            return $"public static class {GetCleanClassName(name)}{Environment.NewLine}{{";
+        }
+
+        private static string GetCleanClassName(string name)
+        {
+            name = name.Replace(".", string.Empty)
+                       .Replace("&", "_");
+
+            return name;
         }
 
         private static string GenerateField(string name, string fieldValue)
@@ -135,7 +143,9 @@ namespace CursorModeler.Tests
             if (string.IsNullOrEmpty(name))
                 return string.Empty;
 
-            return $@"public static string {name} = ""{fieldValue}"";";
+            bool isNumber = int.TryParse(name, out var digit);
+
+            return $@"public static string {(isNumber ? "UndefinedFieldName" : name)} = ""{fieldValue}"";";
         }
     }
 
