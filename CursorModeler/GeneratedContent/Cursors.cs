@@ -1,3 +1,5 @@
+#if IS_POC
+
 // public static string GlobalCursorDB = "";
 public static class A0x
 {
@@ -8,16 +10,14 @@ public static class A0x
     public static string Sizeall = "SizeAll";
     public static string Uparrow = "UpArrow";
     public static string Cd_Busy = "cd_busy";
+
     public static class Drag_Drop_For_Ole32Dll
     {
         public static string Drag_1 = "";
         public static string Drag_2 = "";
         public static string Drag_3 = "";
         public static string Drag_4 = "";
-
     }
-
-
 }
 
 public static class Comix
@@ -41,7 +41,6 @@ public static class Comix
         public static string Text = "text";
         public static string Unavailable = "unavailable";
         public static string Vertical = "vertical";
-
     }
 
     public static class White
@@ -59,7 +58,6 @@ public static class Comix
         public static string Sizenwse = "SizeNWSE";
         public static string Sizewe = "SizeWE";
         public static string Uparrow = "";
-
     }
 
     public static class RedAndBack
@@ -76,7 +74,6 @@ public static class Comix
         public static string Sizenwse = "SizeNWSE";
         public static string Sizewe = "SizeWE";
         public static string Uparrow = "";
-
     }
 
     public static class Black
@@ -98,7 +95,6 @@ public static class Comix
         public static string Text = "text";
         public static string Unavailable = "unavailable";
         public static string Vertical = "vertical";
-
     }
 
     public static class Blue
@@ -115,7 +111,6 @@ public static class Comix
         public static string Sizenwse = "SizeNWSE";
         public static string Sizewe = "SizeWE";
         public static string Uparrow = "";
-
     }
 
     public static class Orange
@@ -132,10 +127,7 @@ public static class Comix
         public static string Sizenwse = "SizeNWSE";
         public static string Sizewe = "SizeWE";
         public static string Uparrow = "";
-
     }
-
-
 }
 
 public static class Continuum_Knot
@@ -157,7 +149,6 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
 
     public static class Gray
@@ -177,7 +168,6 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
 
     public static class Green
@@ -197,7 +187,6 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
 
     public static class Orange
@@ -217,7 +206,6 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
 
     public static class Pink
@@ -237,7 +225,6 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
 
     public static class Purple
@@ -257,7 +244,6 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
 
     public static class Red
@@ -277,7 +263,6 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
 
     public static class White
@@ -297,7 +282,6 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
 
     public static class Yellow
@@ -317,10 +301,7 @@ public static class Continuum_Knot
         public static string Unavailable = "continuum knot unavailable";
         public static string Vertical_Resize = "continuum knot vertical resize";
         public static string Working_In_Background = "continuum knot working in background";
-
     }
-
-
 }
 
 public static class Darkling_Cursor
@@ -338,7 +319,6 @@ public static class Darkling_Cursor
     public static string Unavailable = "unavailable";
     public static string V_Res = "v_res";
     public static string Working = "working";
-
 }
 
 public static class Denial
@@ -356,6 +336,7 @@ public static class Denial
     public static string Text = "Text";
     public static string Unavailable = "Unavailable";
     public static string Verticalresize = "VerticalResize";
+
     public static class Blue
     {
         public static string Alternate = "Alternate";
@@ -371,10 +352,7 @@ public static class Denial
         public static string Text = "Text";
         public static string Unavailable = "Unavailable";
         public static string Verticalresize = "VerticalResize";
-
     }
-
-
 }
 
 public static class Edge11_Aya
@@ -432,7 +410,6 @@ public static class Edge11_Aya
     public static string Saori_Ns = "saori-ns";
     public static string Saori_Nwse = "saori-nwse";
     public static string Saori_Text = "saori-text";
-
 }
 
 public static class Edge11
@@ -490,7 +467,6 @@ public static class Edge11
     public static string Seiko_Ns = "seiko-ns";
     public static string Seiko_Nwse = "seiko-nwse";
     public static string Seiko_Text = "seiko-text";
-
 }
 
 public static class Edge
@@ -516,7 +492,6 @@ public static class Edge
     public static string Nwse_Yuki = "nwse-yuki";
     public static string Pen = "pen";
     public static string Text = "text";
-
 }
 
 public static class Edge_Crystal
@@ -536,7 +511,6 @@ public static class Edge_Crystal
     public static string Nwse = "nwse";
     public static string Pen = "pen";
     public static string Text = "text";
-
 }
 
 public static class Extenza_Crystal_Cursors
@@ -554,7 +528,6 @@ public static class Extenza_Crystal_Cursors
     public static string Nwse = "nwse";
     public static string Pen = "pen";
     public static string Text = "text";
-
 }
 
 public static class ExtenzaBlue
@@ -571,7 +544,6 @@ public static class ExtenzaBlue
     public static string Nwse_Bl = "nwse-bl";
     public static string Pen = "pen";
     public static string Text_Bl = "text-bl";
-
 }
 
 public static class ExtenzaOrange
@@ -588,7 +560,6 @@ public static class ExtenzaOrange
     public static string Nwse_Or = "nwse-or";
     public static string Pen = "pen";
     public static string Text_Or = "text-or";
-
 }
 
 public static class Extenza_Pro
@@ -704,7 +675,6 @@ public static class Extenza_Pro
     public static string Text_7Y = "text-7y";
     public static string Text_8B = "text-8b";
     public static string Text_9W = "text-9w";
-
 }
 
 public static class Forma_NovaAlternatives
@@ -713,7 +683,6 @@ public static class Forma_NovaAlternatives
     public static string Alt_Link2 = "alt_link2";
     public static string Alt_Link3 = "alt_link3";
     public static string Alt_Working_Noanim = "alt_working_noanim";
-
 }
 
 public static class Frequence
@@ -739,7 +708,6 @@ public static class Frequence
         public static string Text = "Frequence Text";
         public static string Unavailable = "Frequence Unavailable";
         public static string Vertical = "Frequence Vertical";
-
     }
 
     public static class Blue
@@ -757,7 +725,6 @@ public static class Frequence
         public static string Text_Short = "Frequence Text (Short)";
         public static string Unavailable_1 = "";
         public static string Vertical = "Frequence Vertical";
-
     }
 
     public static class Default
@@ -782,7 +749,6 @@ public static class Frequence
         public static string Unavailable_1 = "";
         public static string Unavailable_2 = "";
         public static string Vertical = "Frequence Vertical";
-
     }
 
     public static class Green
@@ -803,10 +769,7 @@ public static class Frequence
         public static string Normal = "Frequence Normal";
         public static string Unavailable = "Frequence Unavailable";
         public static string Vertical = "Frequence Vertical";
-
     }
-
-
 }
 
 public static class Chrome_OS
@@ -831,7 +794,6 @@ public static class Chrome_OS
     public static string Out = "out";
     public static string Text = "text";
     public static string Xterm_Horiz = "xterm_horiz";
-
 }
 
 public static class Grey_Tango_Cursor
@@ -851,10 +813,7 @@ public static class Grey_Tango_Cursor
 		public static string 14_Moving = "14_moving";
 		public static string 15_Special_Allocation = "15_special allocation";
 		public static string 16_Reference_Choice = "16_reference choice";
-
 	}
-
-
 }
 
 public static class Grey_Tango_Little
@@ -872,7 +831,6 @@ public static class Grey_Tango_Little
 	public static string 13 = "13";
 	public static string 14 = "14";
 	public static string 15 = "15";
-
 }
 
 public static class Grey_Tango_White
@@ -891,7 +849,6 @@ public static class Grey_Tango_White
 	public static string 14 = "14";
 	public static string 15 = "15";
 	public static string 16 = "16";
-
 }
 
 public static class Incarnerry_Mark
@@ -911,7 +868,6 @@ public static class Incarnerry_Mark
     public static string Unavailable = "incarnerry mark unavailable";
     public static string Vertical_Resize = "incarnerry mark vertical resize";
     public static string Working_In_Background = "incarnerry mark working in background";
-
 }
 
 public static class Integra
@@ -929,7 +885,6 @@ public static class Integra
     public static string Nwse = "nwse";
     public static string Pen = "pen";
     public static string Text = "text";
-
 }
 
 public static class Kcursors
@@ -948,7 +903,6 @@ public static class Kcursors
     public static string K_Unavailable = "k_unavailable";
     public static string K_Vertical_Resize = "k_vertical_resize";
     public static string K_Working_In_Background = "k_working_in_background";
-
 }
 
 public static class Minimal_Taste_Cursors
@@ -966,7 +920,6 @@ public static class Minimal_Taste_Cursors
     public static string Text_Select = "Text Select";
     public static string Unavailable = "Unavailable";
     public static string Vertical_Resize = "Vertical Resize";
-
 }
 
 public static class Ml_Blau
@@ -996,7 +949,6 @@ public static class Ml_Blau
     public static string Ml_Blau_Text = "ml_blau_text";
     public static string Ml_Blau_Unavailable = "ml_blau_unavailable";
     public static string Ml_Blau_Vertical = "ml_blau_vertical";
-
 }
 
 public static class Ml_Blau_3
@@ -1016,10 +968,7 @@ public static class Ml_Blau_3
         public static string Text_Hires = "ml_blau_text_hires";
         public static string Unavailable_Hires = "ml_blau_unavailable_hires";
         public static string Vertical_Hires = "ml_blau_vertical_hires";
-
     }
-
-
 }
 
 public static class Ml_Blau
@@ -1049,7 +998,6 @@ public static class Ml_Blau
     public static string Ml_Blau_Text = "ml_blau_text";
     public static string Ml_Blau_Unavailable = "ml_blau_unavailable";
     public static string Ml_Blau_Vertical = "ml_blau_vertical";
-
 }
 
 public static class Moonshine_V2_3
@@ -1074,7 +1022,6 @@ public static class Moonshine_V2_3
     public static string Unavailable = "MoonShine_v2_3_Unavailable";
     public static string Unavailable_Ole32 = "MoonShine_v2_3_Unavailable_Ole32";
     public static string Vert = "MoonShine_v2_3_Vert";
-
 }
 
 public static class Moonshine_V2
@@ -1106,7 +1053,6 @@ public static class Moonshine_V2
     public static string Text = "MoonShine_v2_Text";
     public static string Unavailable_Ole32 = "MoonShine_v2_Unavailable_Ole32";
     public static string Vert = "MoonShine_v2_Vert";
-
 }
 
 public static class Moonshine_V3
@@ -1131,7 +1077,6 @@ public static class Moonshine_V3
     public static string Text = "MoonShine_v3_Text";
     public static string Unavailable_Ole32 = "MoonShine_v3_Unavailable_Ole32";
     public static string Vert = "MoonShine_v3_Vert";
-
 }
 
 public static class Moonshine_V1
@@ -1157,10 +1102,7 @@ public static class Moonshine_V1
         public static string Moonshine_Text = "MoonShine_Text";
         public static string Moonshine_Unavailable_Ole32 = "MoonShine_Unavailable_Ole32";
         public static string Moonshine_Vert = "MoonShine_Vert";
-
     }
-
-
 }
 
 public static class Neutral
@@ -1178,7 +1120,6 @@ public static class Neutral
     public static string Text_Select = "Text Select";
     public static string Unavailable = "Unavailable";
     public static string Vertical_Resize = "Vertical Resize";
-
 }
 
 public static class Oxygen_Cursors
@@ -1198,7 +1139,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Blue
@@ -1216,7 +1156,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Bluecurve
@@ -1234,7 +1173,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Brown
@@ -1252,7 +1190,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Cherry
@@ -1270,7 +1207,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Chrome
@@ -1288,7 +1224,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Desert
@@ -1306,7 +1241,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Emerald
@@ -1324,7 +1258,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Green
@@ -1342,7 +1275,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Grey
@@ -1360,7 +1292,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Honeycomb
@@ -1378,7 +1309,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Hot_Orange
@@ -1396,7 +1326,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Lilac
@@ -1414,7 +1343,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Midnight_Meadow
@@ -1432,7 +1360,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Navy
@@ -1450,7 +1377,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Norway
@@ -1468,7 +1394,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Obsidian
@@ -1486,7 +1411,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Obsidian_Hc
@@ -1504,7 +1428,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Olympus
@@ -1522,7 +1445,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Olympus_Inv
@@ -1540,7 +1462,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Orchid
@@ -1558,7 +1479,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Oxygen
@@ -1576,7 +1496,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Peach
@@ -1594,7 +1513,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Purple
@@ -1612,7 +1530,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Red
@@ -1630,7 +1547,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Red_Argentina
@@ -1648,7 +1564,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Sea_Blue
@@ -1666,7 +1581,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Steel
@@ -1684,7 +1598,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Terra
@@ -1702,7 +1615,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Terra_Green
@@ -1720,7 +1632,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Violet
@@ -1738,7 +1649,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Viorange
@@ -1756,7 +1666,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class White
@@ -1774,7 +1683,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Whitewater
@@ -1792,7 +1700,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Wonton
@@ -1810,7 +1717,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Yellow
@@ -1828,7 +1734,6 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
 
     public static class Zion
@@ -1846,10 +1751,7 @@ public static class Oxygen_Cursors
         public static string Size_Ver = "size_ver";
         public static string Text = "Text";
         public static string Up_Arrow = "up_arrow";
-
     }
-
-
 }
 
 public static class Polar
@@ -1867,7 +1769,6 @@ public static class Polar
     public static string Rzvertical = "RZVertical";
     public static string Text = "Text";
     public static string Unavailable = "Unavailable";
-
 }
 
 public static class Radix_Phantasma
@@ -1889,7 +1790,6 @@ public static class Radix_Phantasma
         public static string Unavailable = "radix phantasma unavailable";
         public static string Vertical_Resize = "radix phantasma vertical resize";
         public static string Working_In_Background = "radix phantasma working in background";
-
     }
 
     public static class Green
@@ -1909,7 +1809,6 @@ public static class Radix_Phantasma
         public static string Unavailable = "radix phantasma unavailable";
         public static string Vertical_Resize = "radix phantasma vertical resize";
         public static string Working_In_Background = "radix phantasma working in background";
-
     }
 
     public static class Red
@@ -1929,10 +1828,7 @@ public static class Radix_Phantasma
         public static string Unavailable = "radix phantasma unavailable";
         public static string Vertical_Resize = "radix phantasma vertical resize";
         public static string Working_In_Background = "radix phantasma working in background";
-
     }
-
-
 }
 
 public static class Sophicon_Redux
@@ -1954,7 +1850,6 @@ public static class Sophicon_Redux
         public static string Unavailable = "sophicon redux unavailable";
         public static string Vertical_Resize = "sophicon redux vertical resize";
         public static string Working_In_Background = "sophicon redux working in background";
-
     }
 
     public static class Red
@@ -1974,10 +1869,7 @@ public static class Sophicon_Redux
         public static string Unavailable = "sophicon redux unavailable";
         public static string Vertical_Resize = "sophicon redux vertical resize";
         public static string Working_In_Background = "sophicon redux working in background";
-
     }
-
-
 }
 
 public static class Streetlight_V2
@@ -1988,21 +1880,18 @@ public static class Streetlight_V2
         {
             public static string Darkgray_Alternate_2 = "darkGray Alternate (2)";
             public static string Darkgray_Alternate_1 = "darkGray Alternate 1)";
-
         }
 
         public static class Diagonal_1
         {
             public static string Darkgray_Diagonal_1_1 = "";
             public static string Darkgray_Diagonal_1_2 = "";
-
         }
 
         public static class Diagonal_2
         {
             public static string Darkgray_Diagonal_2_1 = "";
             public static string Darkgray_Diagonal_2_2 = "";
-
         }
 
         public static class Handwriting
@@ -2015,7 +1904,6 @@ public static class Streetlight_V2
             public static string Darkgray_Handwriting_2 = "";
             public static string Darkgray_Handwriting_3 = "";
             public static string Darkgray_Handwriting_4 = "";
-
         }
 
         public static class Help
@@ -2024,34 +1912,29 @@ public static class Streetlight_V2
             public static string Darkgray_Help_2 = "";
             public static string Darkgray_Help_3 = "";
             public static string Darkgray_Help_4 = "";
-
         }
 
         public static class Horizontal
         {
             public static string Darkgray_Horizontal_1 = "";
             public static string Darkgray_Horizontal_2 = "";
-
         }
 
         public static class Link
         {
             public static string Darkgray_Link = "";
-
         }
 
         public static class Move
         {
             public static string Darkgray_Move_1 = "";
             public static string Darkgray_Move_2 = "";
-
         }
 
         public static class Normal
         {
             public static string Darkgray_Normal_1 = "";
             public static string Darkgray_Normal_2 = "";
-
         }
 
         public static class Precision
@@ -2059,7 +1942,6 @@ public static class Streetlight_V2
             public static string Darkgray_Precision_1 = "";
             public static string Darkgray_Precision_2 = "";
             public static string Darkgray_Precision_3 = "";
-
         }
 
         public static class Text
@@ -2070,24 +1952,19 @@ public static class Streetlight_V2
             public static string Darkgray_Text_2 = "";
             public static string Darkgray_Text_3_Short = "";
             public static string Darkgray_Text_3 = "";
-
         }
 
         public static class Unavailable
         {
             public static string Darkgray_Unavailable_1 = "";
             public static string Darkgray_Unavailable_2 = "";
-
         }
 
         public static class Vertical
         {
             public static string Darkgray_Vertical_1 = "";
             public static string Darkgray_Vertical_2 = "";
-
         }
-
-
     }
 
     public static class Alternate
@@ -2095,7 +1972,6 @@ public static class Streetlight_V2
         public static string Alternate_1 = "";
         public static string Alternate_2 = "";
         public static string Alternate_3 = "";
-
     }
 
     public static class Diagonal_1
@@ -2103,7 +1979,6 @@ public static class Streetlight_V2
         public static string Diagonal_1_1 = "";
         public static string Diagonal_1_2 = "";
         public static string Diagonal_1_3 = "";
-
     }
 
     public static class Diagonal_2
@@ -2111,7 +1986,6 @@ public static class Streetlight_V2
         public static string Diagonal_2_1 = "";
         public static string Diagonal_2_2 = "";
         public static string Diagonal_2_3 = "";
-
     }
 
     public static class Handwriting
@@ -2138,7 +2012,6 @@ public static class Streetlight_V2
         public static string Handwriting_2 = "";
         public static string Handwriting_3 = "";
         public static string Handwriting_4 = "";
-
     }
 
     public static class Help
@@ -2152,7 +2025,6 @@ public static class Streetlight_V2
         public static string Help_7 = "";
         public static string Help_8 = "";
         public static string Help_9 = "";
-
     }
 
     public static class Horizontal
@@ -2160,7 +2032,6 @@ public static class Streetlight_V2
         public static string Horizontal_1 = "";
         public static string Horizontal_2 = "";
         public static string Horizontal_3 = "";
-
     }
 
     public static class Link
@@ -2168,7 +2039,6 @@ public static class Streetlight_V2
         public static string Link_1 = "";
         public static string Link_2 = "";
         public static string Link = "";
-
     }
 
     public static class Move
@@ -2176,7 +2046,6 @@ public static class Streetlight_V2
         public static string Move_1 = "";
         public static string Move_2 = "";
         public static string Move_3 = "";
-
     }
 
     public static class Normal
@@ -2184,7 +2053,6 @@ public static class Streetlight_V2
         public static string Normal_1 = "";
         public static string Normal_2 = "";
         public static string Normal_3 = "";
-
     }
 
     public static class Precision
@@ -2194,7 +2062,6 @@ public static class Streetlight_V2
         public static string Precision_3 = "";
         public static string Precision_4 = "";
         public static string Precision_5 = "";
-
     }
 
     public static class Text
@@ -2209,14 +2076,12 @@ public static class Streetlight_V2
         public static string Text_4 = "";
         public static string Text_5_Short = "";
         public static string Text_5 = "";
-
     }
 
     public static class Unavailable
     {
         public static string Unavailable_1 = "";
         public static string Unavailable_2 = "";
-
     }
 
     public static class Vertical
@@ -2224,7 +2089,6 @@ public static class Streetlight_V2
         public static string Vertical_1 = "";
         public static string Vertical_2 = "";
         public static string Vertical_3 = "";
-
     }
 
     public static class Handwriting
@@ -2251,7 +2115,6 @@ public static class Streetlight_V2
         public static string Handwriting_2 = "";
         public static string Handwriting_3 = "";
         public static string Handwriting_4 = "";
-
     }
 
     public static class Link
@@ -2259,10 +2122,7 @@ public static class Streetlight_V2
         public static string Link_1 = "";
         public static string Link_2 = "";
         public static string Link = "";
-
     }
-
-
 }
 
 public static class Token_Light_Cursors
@@ -2280,7 +2140,6 @@ public static class Token_Light_Cursors
     public static string Resize_Vertical = "resize_vertical";
     public static string Text = "text";
     public static string Unavailable = "unavailable";
-
 }
 
 public static class Token_Dark_Cursors
@@ -2298,7 +2157,6 @@ public static class Token_Dark_Cursors
     public static string Resize_Vertical = "resize_vertical";
     public static string Text = "text";
     public static string Unavailable = "unavailable";
-
 }
 
 public static class Token_Light_Inspired_Cursors
@@ -2319,7 +2177,6 @@ public static class Token_Light_Inspired_Cursors
 	public static string 16_Link_02 = "16_link_02";
 	public static string 17_Link_03 = "17_link_03";
 	public static string 18_Link_04 = "18_link_04";
-
 }
 
 public static class Volta_Ringlets
@@ -2329,7 +2186,6 @@ public static class Volta_Ringlets
         public static string Alternate_Select = "volta ringlets alternate select";
         public static string Handwriting = "volta ringlets handwriting";
         public static string Normal_Select = "volta ringlets normal select";
-
     }
 
     public static class Non_Animated
@@ -2349,10 +2205,7 @@ public static class Volta_Ringlets
         public static string Unavailable = "";
         public static string Vertical_Resize = "";
         public static string Working_In_Background = "";
-
     }
-
-
 }
 
 public static class Yin_Yang_Cursor
@@ -2370,6 +2223,6 @@ public static class Yin_Yang_Cursor
     public static string YY7 = "YY7";
     public static string YY8 = "YY8";
     public static string YY9 = "YY9";
-
 }
 
+#endif

@@ -43,13 +43,18 @@ namespace CursorModeler
                 if (!Directory.Exists(folderPath))
                     Directory.CreateDirectory(folderPath);
 
-                File.WriteAllText(saveFile, generatedClasses);
+                File.WriteAllText(saveFile, EnclosingString("#if IS_POC", generatedClasses, "#endif"));
                 Console.WriteLine($"Generated output content in '{saveFile}'");
             }
             else
                 Console.WriteLine("This must be called in Visual Studio!");
 
             Console.Read();
+        }
+
+        private  static string EnclosingString(string prefix, string str, string suffix)
+        {
+            return $"{prefix}\n\n{str}\n\n{suffix};"
         }
 
         private static Dictionary<string, string> GetDictionary(IEnumerable<Tuple<string, string>> tupledItems)
