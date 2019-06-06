@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+manami-arrow.cur
+help.cur
+manami-work-r.ani
+manami-busy.ani
+manami-text.cur
+no.cur
+manami-ns.cur
+manami-ew.cur
+manami-nwse.cur
+manami-nesw.cur
+manami-move.cur
+manami-link.cur
+manami-cross.cur
+pen.cur
+manami-alt.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EDGE11"
+SCHEME_NAME   = "Manami R"
+pointer       = "manami-arrow.cur"
+help          = "help.cur"
+work          = "manami-work-r.ani"
+busy          = "manami-busy.ani"
+text          = "manami-text.cur"
+unavailiable  = "no.cur"
+vert          = "manami-ns.cur"
+horz          = "manami-ew.cur"
+dgn1          = "manami-nwse.cur"
+dgn2          = "manami-nesw.cur"
+move          = "manami-move.cur"
+link          = "manami-link.cur"
+cross         = "manami-cross.cur"
+hand          = "pen.cur"
+alternate     = "manami-alt.cur"

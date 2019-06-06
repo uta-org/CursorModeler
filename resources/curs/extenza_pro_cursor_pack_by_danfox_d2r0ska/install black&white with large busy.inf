@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-6w.cur
+help-6w.cur
+work-6w.ani
+busy-l.ani
+text-6w.cur
+no.cur
+ns-6w.cur
+ew-6w.cur
+nwse-6w.cur
+nesw-6w.cur
+move-6w.cur
+link.ani
+cross-6w.cur
+pen-6w.cur
+alt-6w.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - B&W L"
+SCHEME_NAME   = "EXTENZA PRO cursors - B&W L"
+pointer       = "arrow-6w.cur"
+help          = "help-6w.cur"
+work          = "work-6w.ani"
+busy          = "busy-l.ani"
+text          = "text-6w.cur"
+unavailiable  = "no.cur"
+vert          = "ns-6w.cur"
+horz          = "ew-6w.cur"
+dgn1          = "nwse-6w.cur"
+dgn2          = "nesw-6w.cur"
+move          = "move-6w.cur"
+link          = "link.ani"
+cross         = "cross-6w.cur"
+hand          = "pen-6w.cur"
+alternate     = "alt-6w.cur"

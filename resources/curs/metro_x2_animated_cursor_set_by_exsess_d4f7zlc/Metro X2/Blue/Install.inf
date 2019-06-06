@@ -1,0 +1,54 @@
+; Metro X2
+; Right click on the file "Install.inf" and select "Install". Then in the Mouse control panel apply Metro X2 cursors.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Installed files
+
+[Scheme.Cur]
+WP7Busy.ani
+WP7BusyBG.ani
+WP7Cursor.ani
+WP7Help.ani
+WP7Links.ani
+WP7Move.ani
+WP7Nesw.ani
+Install.inf
+WP7Vert.ani
+WP7Hor.ani
+WP7Nwse.ani
+WP7Pen.ani
+WP7Precision.ani
+WP7Text.ani
+WP7Unavail.ani
+
+[Strings]
+CUR_DIR       = "Cursors\Metro X2 Blue"
+SCHEME_NAME   = "Metro X2 Blue"
+pointer       = "WP7Cursor.ani"
+help          = "WP7Help.ani"
+work          = "WP7BusyBG.ani"
+busy          = "WP7Busy.ani"
+text          = "WP7Text.ani"
+unavailiable  = "WP7Unavail.ani"
+vert          = "WP7Vert.ani"
+horz          = "WP7Hor.ani"
+dgn1          = "WP7Nwse.ani"
+dgn2          = "WP7Nesw.ani"
+move          = "WP7Move.ani"
+link          = "WP7Links.ani"
+cross         = "WP7Precision.ani"
+hand          = "WP7Pen.ani"
+alternate     = "WP7Pen.ani"

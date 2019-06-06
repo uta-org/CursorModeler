@@ -1,0 +1,52 @@
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow.cur
+help.cur
+busy.ani
+working.ani
+text.cur
+unavailable.cur
+resize_vertical.cur
+resize_horizontal.cur
+resize_diagonal_01.cur
+resize_diagonal_02.cur
+move.cur
+link.cur
+cross.cur
+pen.cur
+alternate.cur
+
+[Strings]
+CUR_DIR       = "Cursors\token light cursors"
+SCHEME_NAME   = "token light cursors"
+pointer       = "arrow.cur"
+help          = "help.cur"
+work          = "busy.ani"
+busy          = "working.ani"
+text          = "text.cur"
+unavailiable  = "unavailable.cur"
+vert          = "resize_vertical.cur"
+horz          = "resize_horizontal.cur"
+dgn1          = "resize_diagonal_01.cur"
+dgn2          = "resize_diagonal_02.cur"
+move          = "move.cur"
+link          = "link.cur"
+cross         = "cross.cur"
+hand          = "pen.cur"
+alternate     = "alternate.cur"

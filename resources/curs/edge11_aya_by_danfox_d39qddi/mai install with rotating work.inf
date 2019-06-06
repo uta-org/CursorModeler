@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+mai-arrow.cur
+help.cur
+mai-work-r.ani
+mai-busy.ani
+mai-text.cur
+no.cur
+mai-ns.cur
+mai-ew.cur
+mai-nwse.cur
+mai-nesw.cur
+mai-move.cur
+mai-link.cur
+mai-cross.cur
+pen.cur
+mai-alt.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EDGE11"
+SCHEME_NAME   = "Mai R"
+pointer       = "mai-arrow.cur"
+help          = "help.cur"
+work          = "mai-work-r.ani"
+busy          = "mai-busy.ani"
+text          = "mai-text.cur"
+unavailiable  = "no.cur"
+vert          = "mai-ns.cur"
+horz          = "mai-ew.cur"
+dgn1          = "mai-nwse.cur"
+dgn2          = "mai-nesw.cur"
+move          = "mai-move.cur"
+link          = "mai-link.cur"
+cross         = "mai-cross.cur"
+hand          = "pen.cur"
+alternate     = "mai-alt.cur"

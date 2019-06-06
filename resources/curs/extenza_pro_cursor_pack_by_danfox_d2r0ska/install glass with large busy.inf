@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-10t.cur
+help-10t.cur
+work-10t.ani
+busy-l.ani
+text-10t.cur
+no.cur
+ns-10t.cur
+ew-10t.cur
+nwse-10t.cur
+nesw-10t.cur
+move-10t.cur
+link.ani
+cross-10t.cur
+pen-10t.cur
+alt-10t.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - Glass L"
+SCHEME_NAME   = "EXTENZA PRO cursors - Glass L"
+pointer       = "arrow-10t.cur"
+help          = "help-10t.cur"
+work          = "work-10t.ani"
+busy          = "busy-l.ani"
+text          = "text-10t.cur"
+unavailiable  = "no.cur"
+vert          = "ns-10t.cur"
+horz          = "ew-10t.cur"
+dgn1          = "nwse-10t.cur"
+dgn2          = "nesw-10t.cur"
+move          = "move-10t.cur"
+link          = "link.ani"
+cross         = "cross-10t.cur"
+hand          = "pen-10t.cur"
+alternate     = "alt-10t.cur"

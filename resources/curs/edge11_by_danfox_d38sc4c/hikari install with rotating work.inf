@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+hikari-arrow.cur
+help.cur
+hikari-work-r.ani
+hikari-busy.ani
+hikari-text.cur
+no.cur
+hikari-ns.cur
+hikari-ew.cur
+hikari-nwse.cur
+hikari-nesw.cur
+hikari-move.cur
+hikari-link.cur
+hikari-cross.cur
+pen.cur
+hikari-alt.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EDGE11"
+SCHEME_NAME   = "Hikari R"
+pointer       = "hikari-arrow.cur"
+help          = "help.cur"
+work          = "hikari-work-r.ani"
+busy          = "hikari-busy.ani"
+text          = "hikari-text.cur"
+unavailiable  = "no.cur"
+vert          = "hikari-ns.cur"
+horz          = "hikari-ew.cur"
+dgn1          = "hikari-nwse.cur"
+dgn2          = "hikari-nesw.cur"
+move          = "hikari-move.cur"
+link          = "hikari-link.cur"
+cross         = "hikari-cross.cur"
+hand          = "pen.cur"
+alternate     = "hikari-alt.cur"

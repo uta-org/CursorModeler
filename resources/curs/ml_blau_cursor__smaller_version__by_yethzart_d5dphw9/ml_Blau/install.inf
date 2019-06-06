@@ -1,0 +1,54 @@
+
+;	ml-Blau
+;	CURSORS ORIGINALLY MADE BY BY MAIK LINDNER, POTSDAM 08/2012
+;	maik.deviantart.com
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+[Scheme.Cur]
+ml_blau_alternate.cur
+ml_blau_busy.ani
+ml_blau_diagonal_left.cur
+ml_blau_diagonal_right.cur
+ml_blau_link.cur
+ml_blau_help.ani
+ml_blau_horizontal.cur
+ml_blau_move.cur
+ml_blau_normal.cur
+ml_blau_pen.cur
+ml_blau_precision.cur
+ml_blau_text.cur
+ml_blau_unavailable.cur
+ml_blau_vertical.cur
+ml_blau_working.ani
+
+[Strings]
+CUR_DIR			
+SCHEME_NAME		= "ml-Blau"
+alternate		= "ml_blau_alternate.cur"
+busy			= "ml_blau_busy.ani"
+dgn1			= "ml_blau_diagonal_left.cur"
+dgn2			= "ml_blau_diagonal_right.cur"
+link			= "ml_blau_link.cur"
+help			= "ml_blau_help.ani"
+horz			= "ml_blau_horizontal.cur"
+move			= "ml_blau_move.cur"
+pointer			= "ml_blau_normal.cur"
+hand			= "ml_blau_pen.cur"
+cross			= "ml_blau_precision.cur"
+text			= "ml_blau_text.cur"
+unavailiable	= "ml_blau_unavailable.cur"
+vert			= "ml_blau_vertical.cur"
+work			= "ml_blau_working.ani"
+

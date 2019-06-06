@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-7y.cur
+help-7y.cur
+work-7y.ani
+busy-x.ani
+text-7y.cur
+no.cur
+ns-7y.cur
+ew-7y.cur
+nwse-7y.cur
+nesw-7y.cur
+move-7y.cur
+link.ani
+cross-7y.cur
+pen-7y.cur
+alt-7y.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - Yellow X"
+SCHEME_NAME   = "EXTENZA PRO cursors - Yellow X"
+pointer       = "arrow-7y.cur"
+help          = "help-7y.cur"
+work          = "work-7y.ani"
+busy          = "busy-x.ani"
+text          = "text-7y.cur"
+unavailiable  = "no.cur"
+vert          = "ns-7y.cur"
+horz          = "ew-7y.cur"
+dgn1          = "nwse-7y.cur"
+dgn2          = "nesw-7y.cur"
+move          = "move-7y.cur"
+link          = "link.ani"
+cross         = "cross-7y.cur"
+hand          = "pen-7y.cur"
+alternate     = "alt-7y.cur"

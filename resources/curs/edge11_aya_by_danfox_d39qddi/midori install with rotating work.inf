@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+midori-arrow.cur
+help.cur
+midori-work-r.ani
+midori-busy.ani
+midori-text.cur
+no.cur
+midori-ns.cur
+midori-ew.cur
+midori-nwse.cur
+midori-nesw.cur
+midori-move.cur
+midori-link.cur
+midori-cross.cur
+pen.cur
+midori-alt.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EDGE11"
+SCHEME_NAME   = "Midori R"
+pointer       = "midori-arrow.cur"
+help          = "help.cur"
+work          = "midori-work-r.ani"
+busy          = "midori-busy.ani"
+text          = "midori-text.cur"
+unavailiable  = "no.cur"
+vert          = "midori-ns.cur"
+horz          = "midori-ew.cur"
+dgn1          = "midori-nwse.cur"
+dgn2          = "midori-nesw.cur"
+move          = "midori-move.cur"
+link          = "midori-link.cur"
+cross         = "midori-cross.cur"
+hand          = "pen.cur"
+alternate     = "midori-alt.cur"

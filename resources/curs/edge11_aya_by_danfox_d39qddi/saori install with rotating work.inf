@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+saori-arrow.cur
+help.cur
+saori-work-r.ani
+saori-busy.ani
+saori-text.cur
+no.cur
+saori-ns.cur
+saori-ew.cur
+saori-nwse.cur
+saori-nesw.cur
+saori-move.cur
+saori-link.cur
+saori-cross.cur
+pen.cur
+saori-alt.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EDGE11"
+SCHEME_NAME   = "Saori R"
+pointer       = "saori-arrow.cur"
+help          = "help.cur"
+work          = "saori-work-r.ani"
+busy          = "saori-busy.ani"
+text          = "saori-text.cur"
+unavailiable  = "no.cur"
+vert          = "saori-ns.cur"
+horz          = "saori-ew.cur"
+dgn1          = "saori-nwse.cur"
+dgn2          = "saori-nesw.cur"
+move          = "saori-move.cur"
+link          = "saori-link.cur"
+cross         = "saori-cross.cur"
+hand          = "pen.cur"
+alternate     = "saori-alt.cur"

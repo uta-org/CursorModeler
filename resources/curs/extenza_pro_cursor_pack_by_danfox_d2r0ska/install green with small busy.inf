@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-4g.cur
+help-4g.cur
+work-4g.ani
+busy-s.ani
+text-4g.cur
+no.cur
+ns-4g.cur
+ew-4g.cur
+nwse-4g.cur
+nesw-4g.cur
+move-4g.cur
+link.ani
+cross-4g.cur
+pen-4g.cur
+alt-4g.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - Green S"
+SCHEME_NAME   = "EXTENZA PRO cursors - Green S"
+pointer       = "arrow-4g.cur"
+help          = "help-4g.cur"
+work          = "work-4g.ani"
+busy          = "busy-s.ani"
+text          = "text-4g.cur"
+unavailiable  = "no.cur"
+vert          = "ns-4g.cur"
+horz          = "ew-4g.cur"
+dgn1          = "nwse-4g.cur"
+dgn2          = "nesw-4g.cur"
+move          = "move-4g.cur"
+link          = "link.ani"
+cross         = "cross-4g.cur"
+hand          = "pen-4g.cur"
+alternate     = "alt-4g.cur"

@@ -114,10 +114,9 @@ namespace CursorModeler.Tests
                 return string.Empty;
 
             return $"public static class {name}{Environment.NewLine}{{";
-            // return $@"public static class {name}{Environment.NewLine}{{";
         }
 
-        private static string GenerateField(string name, string fieldValue) // , Func<string> str)
+        private static string GenerateField(string name, string fieldValue)
         {
             if (string.IsNullOrEmpty(name))
                 return string.Empty;

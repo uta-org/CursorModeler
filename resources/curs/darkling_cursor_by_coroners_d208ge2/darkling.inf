@@ -1,0 +1,50 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"pointer.cur"
+"help.cur"
+"working.cur"
+"busy.ani"
+"p_select.cur"
+"t_select.cur"
+"unavailable.cur"
+"v_res.cur"
+"h_res.cur"
+"d_res1.cur"
+"d_res2.cur"
+"move.cur"
+"alt_s.cur"
+"link.cur"
+
+[Strings]
+CUR_DIR		= "Cursors\Darkling"
+SCHEME_NAME	= "Darkling"
+pointer		= "pointer.cur"
+help		= "help.cur"
+work		= "working.cur"
+busy		= "busy.ani"
+cross		= "p_select.cur"
+text		= "t_select.cur"
+unavailiable	= "unavailable.cur"
+vert		= "v_res.cur"
+horz		= "h_res.cur"
+dgn1		= "d_res1.cur"
+dgn2		= "d_res2.cur"
+move		= "move.cur"
+alternate	= "alt_s.cur"
+link		= "link.cur"
+

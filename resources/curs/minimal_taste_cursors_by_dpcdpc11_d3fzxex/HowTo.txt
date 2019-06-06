@@ -1,0 +1,13 @@
+Here's something new for you!
+Something that matches well my Minimal Taste Reloaded Windows 7 theme: http://dpcdpc11.deviantart.com/art/Minimal-Taste-Reloaded-for-W7-204021255
+Of course I'm talking about the Minimal Taste Cursors Pack!
+
+
+How to install??? Now that's easy!
+Unpack the archive anywhere you like...
+Then just Right Click on the install.inf file and select Install from the Right Click Menu.
+Now just go to Contro Panel>Mouse>Pointers and from the Scheme drop-down menu choose Minimal Taste Cursors.
+Now hit Apply or Ok and you're good to go!
+
+Author: dpcdpc11
+Email: dpcdpc11@gmail.com

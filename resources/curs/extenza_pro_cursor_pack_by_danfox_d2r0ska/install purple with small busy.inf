@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-5p.cur
+help-5p.cur
+work-5p.ani
+busy-s.ani
+text-5p.cur
+no.cur
+ns-5p.cur
+ew-5p.cur
+nwse-5p.cur
+nesw-5p.cur
+move-5p.cur
+link.ani
+cross-5p.cur
+pen-5p.cur
+alt-5p.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - Purple S"
+SCHEME_NAME   = "EXTENZA PRO cursors - Purple S"
+pointer       = "arrow-5p.cur"
+help          = "help-5p.cur"
+work          = "work-5p.ani"
+busy          = "busy-s.ani"
+text          = "text-5p.cur"
+unavailiable  = "no.cur"
+vert          = "ns-5p.cur"
+horz          = "ew-5p.cur"
+dgn1          = "nwse-5p.cur"
+dgn2          = "nesw-5p.cur"
+move          = "move-5p.cur"
+link          = "link.ani"
+cross         = "cross-5p.cur"
+hand          = "pen-5p.cur"
+alternate     = "alt-5p.cur"

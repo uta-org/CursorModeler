@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+amaya-arrow.cur
+help.cur
+amaya-work-r.ani
+amaya-busy.ani
+amaya-text.cur
+no.cur
+amaya-ns.cur
+amaya-ew.cur
+amaya-nwse.cur
+amaya-nesw.cur
+amaya-move.cur
+amaya-link.cur
+amaya-cross.cur
+pen.cur
+amaya-alt.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EDGE11"
+SCHEME_NAME   = "Amaya R"
+pointer       = "amaya-arrow.cur"
+help          = "help.cur"
+work          = "amaya-work-r.ani"
+busy          = "amaya-busy.ani"
+text          = "amaya-text.cur"
+unavailiable  = "no.cur"
+vert          = "amaya-ns.cur"
+horz          = "amaya-ew.cur"
+dgn1          = "amaya-nwse.cur"
+dgn2          = "amaya-nesw.cur"
+move          = "amaya-move.cur"
+link          = "amaya-link.cur"
+cross         = "amaya-cross.cur"
+hand          = "pen.cur"
+alternate     = "amaya-alt.cur"

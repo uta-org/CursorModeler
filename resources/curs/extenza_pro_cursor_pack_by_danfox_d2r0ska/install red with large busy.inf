@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-3r.cur
+help-3r.cur
+work-3r.ani
+busy-l.ani
+text-3r.cur
+no.cur
+ns-3r.cur
+ew-3r.cur
+nwse-3r.cur
+nesw-3r.cur
+move-3r.cur
+link.ani
+cross-3r.cur
+pen-3r.cur
+alt-3r.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - Red L"
+SCHEME_NAME   = "EXTENZA PRO cursors - Red L"
+pointer       = "arrow-3r.cur"
+help          = "help-3r.cur"
+work          = "work-3r.ani"
+busy          = "busy-l.ani"
+text          = "text-3r.cur"
+unavailiable  = "no.cur"
+vert          = "ns-3r.cur"
+horz          = "ew-3r.cur"
+dgn1          = "nwse-3r.cur"
+dgn2          = "nesw-3r.cur"
+move          = "move-3r.cur"
+link          = "link.ani"
+cross         = "cross-3r.cur"
+hand          = "pen-3r.cur"
+alternate     = "alt-3r.cur"

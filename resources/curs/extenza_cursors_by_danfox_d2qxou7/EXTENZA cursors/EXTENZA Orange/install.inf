@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-or.cur
+help-or.cur
+work-or.ani
+busy.ani
+text-or.cur
+no.cur
+ns-or.cur
+ew-or.cur
+nwse-or.cur
+nesw-or.cur
+move-or.cur
+link-or.ani
+cross-or.cur
+pen.cur
+alt-or.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA cursors - Orange"
+SCHEME_NAME   = "EXTENZA cursors - Orange"
+pointer       = "arrow-or.cur"
+help          = "help-or.cur"
+work          = "work-or.ani"
+busy          = "busy.ani"
+text          = "text-or.cur"
+unavailiable  = "no.cur"
+vert          = "ns-or.cur"
+horz          = "ew-or.cur"
+dgn1          = "nwse-or.cur"
+dgn2          = "nesw-or.cur"
+move          = "move-or.cur"
+link          = "link-or.ani"
+cross         = "cross-or.cur"
+hand          = "pen.cur"
+alternate     = "alt-or.cur"

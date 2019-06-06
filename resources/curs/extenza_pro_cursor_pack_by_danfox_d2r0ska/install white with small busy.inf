@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-9w.cur
+help-9w.cur
+work-9w.ani
+busy-s.ani
+text-9w.cur
+no.cur
+ns-9w.cur
+ew-9w.cur
+nwse-9w.cur
+nesw-9w.cur
+move-9w.cur
+link.ani
+cross-9w.cur
+pen-9w.cur
+alt-9w.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - White S"
+SCHEME_NAME   = "EXTENZA PRO cursors - White S"
+pointer       = "arrow-9w.cur"
+help          = "help-9w.cur"
+work          = "work-9w.ani"
+busy          = "busy-s.ani"
+text          = "text-9w.cur"
+unavailiable  = "no.cur"
+vert          = "ns-9w.cur"
+horz          = "ew-9w.cur"
+dgn1          = "nwse-9w.cur"
+dgn2          = "nesw-9w.cur"
+move          = "move-9w.cur"
+link          = "link.ani"
+cross         = "cross-9w.cur"
+hand          = "pen-9w.cur"
+alternate     = "alt-9w.cur"

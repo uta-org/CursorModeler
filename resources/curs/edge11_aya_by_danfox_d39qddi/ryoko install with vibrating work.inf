@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+ryoko-arrow.cur
+help.cur
+ryoko-work-v.ani
+ryoko-busy.ani
+ryoko-text.cur
+no.cur
+ryoko-ns.cur
+ryoko-ew.cur
+ryoko-nwse.cur
+ryoko-nesw.cur
+ryoko-move.cur
+ryoko-link.cur
+ryoko-cross.cur
+pen.cur
+ryoko-alt.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EDGE11"
+SCHEME_NAME   = "Ryoko V"
+pointer       = "ryoko-arrow.cur"
+help          = "help.cur"
+work          = "ryoko-work-v.ani"
+busy          = "ryoko-busy.ani"
+text          = "ryoko-text.cur"
+unavailiable  = "no.cur"
+vert          = "ryoko-ns.cur"
+horz          = "ryoko-ew.cur"
+dgn1          = "ryoko-nwse.cur"
+dgn2          = "ryoko-nesw.cur"
+move          = "ryoko-move.cur"
+link          = "ryoko-link.cur"
+cross         = "ryoko-cross.cur"
+hand          = "pen.cur"
+alternate     = "ryoko-alt.cur"

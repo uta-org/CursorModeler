@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-2b.cur
+help-2b.cur
+work-2b.ani
+busy-l.ani
+text-2b.cur
+no.cur
+ns-2b.cur
+ew-2b.cur
+nwse-2b.cur
+nesw-2b.cur
+move-2b.cur
+link.ani
+cross-2b.cur
+pen-2b.cur
+alt-2b.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - Blue L"
+SCHEME_NAME   = "EXTENZA PRO cursors - Blue L"
+pointer       = "arrow-2b.cur"
+help          = "help-2b.cur"
+work          = "work-2b.ani"
+busy          = "busy-l.ani"
+text          = "text-2b.cur"
+unavailiable  = "no.cur"
+vert          = "ns-2b.cur"
+horz          = "ew-2b.cur"
+dgn1          = "nwse-2b.cur"
+dgn2          = "nesw-2b.cur"
+move          = "move-2b.cur"
+link          = "link.ani"
+cross         = "cross-2b.cur"
+hand          = "pen-2b.cur"
+alternate     = "alt-2b.cur"

@@ -1,0 +1,57 @@
+; xFree cursors for Windows XP.
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow-8b.cur
+help-8b.cur
+work-8b.ani
+busy-x.ani
+text-8b.cur
+no.cur
+ns-8b.cur
+ew-8b.cur
+nwse-8b.cur
+nesw-8b.cur
+move-8b.cur
+link.ani
+cross-8b.cur
+pen-8b.cur
+alt-8b.cur
+
+[Scheme.Txt]
+Readme.txt
+
+[Strings]
+CUR_DIR       = "Cursors\EXTENZA PRO cursors - Black X"
+SCHEME_NAME   = "EXTENZA PRO cursors - Black X"
+pointer       = "arrow-8b.cur"
+help          = "help-8b.cur"
+work          = "work-8b.ani"
+busy          = "busy-x.ani"
+text          = "text-8b.cur"
+unavailiable  = "no.cur"
+vert          = "ns-8b.cur"
+horz          = "ew-8b.cur"
+dgn1          = "nwse-8b.cur"
+dgn2          = "nesw-8b.cur"
+move          = "move-8b.cur"
+link          = "link.ani"
+cross         = "cross-8b.cur"
+hand          = "pen-8b.cur"
+alternate     = "alt-8b.cur"
