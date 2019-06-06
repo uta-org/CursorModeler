@@ -21,7 +21,6 @@ namespace CursorModeler
 
         public static void Main()
         {
-            // Console.WriteLine("Hello World");
             string json;
             using (WebClient wc = new WebClient())
             {
@@ -30,84 +29,23 @@ namespace CursorModeler
 
             var atlas = JsonConvert.DeserializeObject<Atlas>(json);
 
-            // Console.WriteLine(LevelTest.CreateLevels());
-            // LevelTest.GenerateClassesWithoutSplitting();
-
-            //#if NAMEDEBUG
-            //            atlas.Nodes.ForEach(node => GetName(node.Texture.Source));
-            //#else
-            //            atlas.Nodes.ForEach(node => Console.WriteLine(GetName(node.Texture.Source)));
-            //#endif
             var nameMapping = atlas.Nodes.Select(node => GetName(node.Texture.Source));
             string classMap = MapClasses(nameMapping);
 
             Console.WriteLine(classMap);
-
-            // TODO: Think about how to link names to this enum (https://stephenhodgson.github.io/UnityCsReference/api/UnityEditor.MouseCursor.html)
-            // TODO: Think about how to get a value from this enum (Maybe by inheriting a global class (GlobalCursorDB), and inheriting only on the last class)
-            // This class will have a method 'public string GetCursor(MouseCursor cursorType)'
-            // All last classes will inherit from Singleton (own implementation repasted)
-            // We need to add the constructor and a virtual Dictionary (global class) ¿overriding it on the derived class?, and on the derived class we will Add manually values to this overrided Dictionary
-            // TODO: Don't do classes static
-
             Console.Read();
-
-            // Console.WriteLine(json.Length);
         }
 
         private static string MapClasses(IEnumerable<Tuple<string, string>> mapping)
         {
-            // var dict = mapping.ToDictionary(t => t.Item2, t => t.Item1);
             var arr = mapping.Select(t => t.Item2).ToArray();
 
             return LevelTest.GenerateAllClasses(arr, arg => GetFieldValue(mapping, arg));
-
-            //StringBuilder sb = new StringBuilder("public static class CursorsDB {");
-
-            //foreach (var item in arr)
-            //{
-            //    // TODO: Get items like this:
-
-            //    // Input
-
-            //    // aaaa/item1.png
-            //    // aaaa/item2.png
-            //    // aaaa/item3.png
-            //    // bbbb/item1.png
-            //    // bbbb/item2.png
-
-            //    // Output
-
-            //    // aaaa/item1.png
-            //    // item2.png
-            //    // item3.png
-            //    // bbbb/item1.png
-            //    // item2.png
-
-            //    // TODO: Then create a class and its variables with the values (easy task)
-
-            //    // Idea sobre como podría hacer esto:
-            //    // Básicamente hay que tener un string lastHandle (se forma haciendo substring hasta el primer '/'), y comprobar que el lastHandle y el handleActual (tengo q hacer un metodo para el tema del substring)
-            //    // sean iguales, entonces se hará replace (para eliminar la parte del 'aaaa/')
-            //    // sean diferentes, se cambiará el valor del lastHandle para ser usado por los proximos replaces
-            //    // El único problema que a esto le veo es tener varios niveles... Asi que en ese caso, tendré que hacer un metodo que genere el input de arriba, y otro metodo que realice los cambios pertinentes
-
-            //    //string hierarchy = tuple.Item2;
-            //    //string[] subNodes = hierarchy.Split("\\".ToCharArray());
-
-            //    //var classNodes = subNodes.TakeAllButLast();
-            //    //string varName =
-            //}
-
-            // sb.AppendLine("}");
-            // return sb.ToString();
         }
 
         private static string GetFieldValue(IEnumerable<Tuple<string, string>> mapping, string arg)
         {
-            return mapping.First(tuple => tuple.Item2 == arg).Item1;
-
-            // return dict[arg];
+            return mapping.FirstOrDefault(tuple => tuple.Item2 == arg)?.Item1;
         }
 
         private static Tuple<string, string> GetName(string name)
@@ -137,10 +75,6 @@ namespace CursorModeler
 
             if (!string.IsNullOrEmpty(match))
             {
-                //#if NAMEDEBUG
-                //                Console.WriteLine($"Match: {match} (Name: {name})");
-                //#endif
-
                 name = name.Replace(match, "");
                 name = match + name;
 
@@ -172,19 +106,17 @@ namespace CursorModeler
                 .Replace(@"Comix_Cursors_Blue\Comixcursors_Blue", @"Comix\Blue")
                 .Replace(@"Comix_Cursors_Black", @"Comix\Black")
                 .Replace(@"Comix_Cursors_Black_And_Red\Comixcursors_Black_And_Red", @"Comix\RedAndBlack")
+                .Replace(@"Comix\Black_And_Red\Comixcursors_Black_And_Red", @"Comix\RedAndBack")
                 .Replace(@"Cd_Busy_For_User32.Dll\Cd_Busy", "Cd_Busy")
                 .Replace(@"A0x_Curset_1__Cur_And_Ani_Ver_\A0x_Cursors", "A0x");
 
             name = name.Replace(@".Png", string.Empty);
-
-            // name = string.Join(" ", name.ToCharArray().Distinct());
-
-            // name = string.Join(" ", name).Split(new Char[] { ' ' }).Distinct());
+            name = name.Replace("\\", "/");
 
 #if NAMEDEBUG
             // Console.WriteLine($"Subpaths: " + Regex.Matches(name, @"\\").Count);
             // Console.WriteLine($"Matches: {Regex.Matches(name, match).Count} || Name: {name}");
-            Console.WriteLine(name);
+            Console.WriteLine("[FileName={0}, Name={1}]", fileName, name);
 #endif
 
             return new Tuple<string, string>(fileName, name);
