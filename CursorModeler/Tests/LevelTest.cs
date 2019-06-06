@@ -17,59 +17,71 @@ namespace CursorModeler.Tests
         }
 
         private const bool debug = false;
+        private const string GENERAL_CLASS = "GlobalCursorDB";
+        private static RecursiveNode GeneralNode;
 
-        private static IEnumerable<RecursiveNode> RecursiveSplitting(IEnumerable<string> arrs, string currentParent = "", string splitChar = "/", bool nestedDebug = false)
+        private static IEnumerable<RecursiveNode> RecursiveSplitting(IEnumerable<string> arrs, string currentParent = "", string splitChar = "/")
         {
             if (!string.IsNullOrEmpty(Separator))
                 splitChar = Separator;
 
             UsedSeparator = splitChar;
 
-            var _arrs = debug && !nestedDebug
-                    ? arrs.Where(a => a.Contains("Comix/"))
-                    : arrs;
-
-            if (debug)
-                nestedDebug = true;
-
             string lastHandle = "";
-            foreach (var item in _arrs)
+            foreach (string item in arrs)
             {
                 if (string.IsNullOrEmpty(item))
                     continue;
 
-                string parent = string.IsNullOrEmpty(currentParent) && item.Contains(splitChar)
+                bool isTopLevelCall = string.IsNullOrEmpty(currentParent);
+
+                string parent = isTopLevelCall && item.Contains(splitChar)
                     ? item.Substring(0, item.LastIndexOf(splitChar))
                     : currentParent;
 
                 if (!item.Contains(splitChar))
                 {
-                    yield return new RecursiveNode(item, parent);
+                    Console.WriteLine($"General node found {item}!");
+
+                    // If parent isn't still defined we are on the top-level recursive call
+                    if (isTopLevelCall)
+                    {
+                        if (GeneralNode == null)
+                        {
+                            GeneralNode = new RecursiveNode(GENERAL_CLASS, string.Empty);
+                            yield return GeneralNode;
+                        }
+
+                        GeneralNode.Childs.Add(new RecursiveNode(item, string.Empty));
+                    }
+                    else
+                        yield return new RecursiveNode(item, parent);
+
                     continue;
                 }
 
-                var splitted = item.Split(splitChar.ToCharArray());
+                var splittedValues = item.Split(splitChar.ToCharArray());
 
-                if (lastHandle == splitted[0])
+                if (lastHandle == splittedValues[0])
                     continue;
 
-                lastHandle = splitted[0];
+                lastHandle = splittedValues[0];
 
                 var node = new RecursiveNode(lastHandle, parent);
 
-                var subItems = arrs.Where(i => i.StartsWith(splitted[0] + splitChar) && i.Contains(splitChar))
-                                   .Select(i => i.Replace(splitted[0] + splitChar, string.Empty));
+                var subItems = arrs.Where(i => i.StartsWith(splittedValues[0] + splitChar) && i.Contains(splitChar))
+                                   .Select(i => i.Replace(splittedValues[0] + splitChar, string.Empty));
 
                 if (debug)
                     Console.WriteLine("[Item={0}, SubItem Count={1}]", item, subItems.Count());
 
-                if (splitted.Length == 1)
+                if (splittedValues.Length == 1)
                 {
-                    yield return new RecursiveNode(splitted[0], parent);
+                    yield return new RecursiveNode(splittedValues[0], parent);
                     continue;
                 }
 
-                var subNodes = RecursiveSplitting(subItems, parent, splitChar, nestedDebug);
+                var subNodes = RecursiveSplitting(subItems, parent, splitChar);
                 node.Childs.AddRange(subNodes);
 
                 yield return node;
@@ -108,6 +120,7 @@ namespace CursorModeler.Tests
             return sb.ToString();
         }
 
+        // We don't use CodeDom due to simplicity
         private static string GenerateClass(string name)
         {
             if (string.IsNullOrEmpty(name))

@@ -31,9 +31,21 @@ namespace CursorModeler
             var nameMapping = atlas.Nodes.Select(node => GetName(node.Texture.Source));
             var mappedDictionary = GetDictionary(nameMapping);
 
-            string classMap = MapClasses(mappedDictionary);
+            string generatedClasses = MapClasses(mappedDictionary);
 
-            Console.WriteLine(classMap);
+            if (Environment.CurrentDirectory.Contains("bin"))
+            {
+                string saveFile =
+                    Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Environment.CurrentDirectory)),
+                        "GeneratedContent", "Cursors.cs");
+
+                string folderPath = Path.GetDirectoryName(saveFile);
+                if (!Directory.Exists(folderPath))
+                    Directory.CreateDirectory(folderPath);
+
+                File.WriteAllText(saveFile, generatedClasses);
+            }
+
             Console.Read();
         }
 
@@ -45,10 +57,8 @@ namespace CursorModeler
             {
                 if (!dict.ContainsKey(item.Item1))
                     dict.Add(item.Item1, item.Item2);
-                else
-                {
-                    Console.WriteLine($"[Name={item.Item1}, FileName={item.Item2}] -- Already added!");
-                }
+                //else
+                //    Console.WriteLine($"[Name={item.Item1}, FileName={item.Item2}] -- Already added!");
             }
 
             return dict;
