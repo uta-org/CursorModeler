@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace CursorModeler.Tests
 {
@@ -121,13 +122,18 @@ namespace CursorModeler.Tests
             return sb.ToString();
         }
 
+        private static HashSet<string> classNames = new HashSet<string>();
+
         // We don't use CodeDom due to simplicity
         private static string GenerateClass(string name)
         {
             if (string.IsNullOrEmpty(name))
                 return string.Empty;
 
-            return $"public static class {GetCleanClassName(name)}{Environment.NewLine}{{";
+            string cleanedName = GetCleanClassName(name);
+            bool isAlreadyOnList = classNames.Add(cleanedName);
+
+            return $"public static {(isAlreadyOnList ? "partial" : string.Empty)} class {cleanedName}{Environment.NewLine}{{";
         }
 
         private static string GetCleanClassName(string name)
@@ -144,6 +150,12 @@ namespace CursorModeler.Tests
                 return string.Empty;
 
             bool isNumber = int.TryParse(name, out var digit);
+
+            if (Regex.IsMatch(name, @"^\d"))
+                name = Regex.Replace(name, @"^\d+", string.Empty);
+
+            if (name.StartsWith("_"))
+                name = name.Substring(1);
 
             return $@"public static string {(isNumber ? "UndefinedFieldName" : name)} = ""{fieldValue}"";";
         }
