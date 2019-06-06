@@ -28,24 +28,42 @@ namespace CursorModeler
             }
 
             var atlas = JsonConvert.DeserializeObject<Atlas>(json);
-
             var nameMapping = atlas.Nodes.Select(node => GetName(node.Texture.Source));
-            string classMap = MapClasses(nameMapping);
+            var mappedDictionary = GetDictionary(nameMapping);
+
+            string classMap = MapClasses(mappedDictionary);
 
             Console.WriteLine(classMap);
             Console.Read();
         }
 
-        private static string MapClasses(IEnumerable<Tuple<string, string>> mapping)
+        private static Dictionary<string, string> GetDictionary(IEnumerable<Tuple<string, string>> tupledItems)
         {
-            var arr = mapping.Select(t => t.Item2).ToArray();
+            var dict = new Dictionary<string, string>();
+
+            foreach (var item in tupledItems)
+            {
+                if (!dict.ContainsKey(item.Item1))
+                    dict.Add(item.Item1, item.Item2);
+                else
+                {
+                    Console.WriteLine($"[Name={item.Item1}, FileName={item.Item2}] -- Already added!");
+                }
+            }
+
+            return dict;
+        }
+
+        private static string MapClasses(Dictionary<string, string> mapping)
+        {
+            var arr = mapping.Keys.ToArray();
 
             return LevelTest.GenerateAllClasses(arr, arg => GetFieldValue(mapping, arg));
         }
 
-        private static string GetFieldValue(IEnumerable<Tuple<string, string>> mapping, string arg)
+        private static string GetFieldValue(Dictionary<string, string> mapping, string arg)
         {
-            return mapping.FirstOrDefault(tuple => tuple.Item2 == arg)?.Item1;
+            return mapping.ContainsKey(arg) ? mapping[arg] : string.Empty;
         }
 
         private static Tuple<string, string> GetName(string name)
@@ -119,7 +137,7 @@ namespace CursorModeler
             Console.WriteLine("[FileName={0}, Name={1}]", fileName, name);
 #endif
 
-            return new Tuple<string, string>(fileName, name);
+            return new Tuple<string, string>(name, fileName);
         }
 
         private static string RemoveBy(string title)

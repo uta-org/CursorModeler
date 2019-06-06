@@ -44,8 +44,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TexturePacker.Lib">
-      <HintPath>..\..\TexturePacker\TexturePacker.Lib\bin\Debug\TexturePacker.Lib.dll</HintPath>
+    <Reference Include="TexturePacker.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TexturePacker\TexturePacker.Lib\bin\Release\TexturePacker.Lib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
