@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿#define REFLECTION
+
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -19,6 +21,7 @@ namespace CursorModeler
 
         public static void Main()
         {
+#if !REFLECTION
             string json;
             using (WebClient wc = new WebClient())
                 json = wc.DownloadString(ATLAS_URL);
@@ -44,6 +47,9 @@ namespace CursorModeler
             }
             else
                 Console.WriteLine("This must be called in Visual Studio!");
+#else
+
+#endif
 
             Console.WriteLine("Press any key to exit...");
             Console.Read();

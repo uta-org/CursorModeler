@@ -170,7 +170,7 @@ namespace CursorModeler.Tests
             if (isAlreadyAdded && debug)
                 Console.WriteLine($"Already added field '{realPath + name}'");
 
-            return (isAlreadyAdded ? "// " : string.Empty) + $@"public static string {finalName} = ""{fieldValue}"";";
+            return (isAlreadyAdded ? "// " : string.Empty) + $@"public static string {finalName} = ""{(string.IsNullOrEmpty(fieldValue) ? finalName : fieldValue)}"";";
         }
     }
 
