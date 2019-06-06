@@ -28,13 +28,13 @@ namespace CursorModeler.Tests
 
             UsedSeparator = splitChar;
 
+            bool isTopLevelCall = string.IsNullOrEmpty(currentParent);
+
             string lastHandle = "";
             foreach (string item in arrs)
             {
                 if (string.IsNullOrEmpty(item))
                     continue;
-
-                bool isTopLevelCall = string.IsNullOrEmpty(currentParent);
 
                 string parent = isTopLevelCall && item.Contains(splitChar)
                     ? item.Substring(0, item.LastIndexOf(splitChar))
@@ -49,10 +49,7 @@ namespace CursorModeler.Tests
                     if (isTopLevelCall)
                     {
                         if (GeneralNode == null)
-                        {
                             GeneralNode = new RecursiveNode(GENERAL_CLASS, string.Empty);
-                            yield return GeneralNode;
-                        }
 
                         GeneralNode.Childs.Add(new RecursiveNode(item, string.Empty));
                     }
@@ -88,6 +85,9 @@ namespace CursorModeler.Tests
 
                 yield return node;
             }
+
+            if (isTopLevelCall)
+                yield return GeneralNode;
         }
 
         private static string OutputRecursiveNode(IEnumerable<RecursiveNode> nodes, Func<string, string> getFieldValue, int count = -1)

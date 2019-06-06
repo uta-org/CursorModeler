@@ -1,6 +1,7 @@
 #if IS_POC
 
-// public static string GlobalCursorDB = "";
+public static string GlobalCursorDB = "";
+
 public static class A0x
 {
     public static string Arrow = "Arrow";
@@ -800,55 +801,55 @@ public static class Grey_Tango_Cursor
 {
     public static class Grey_Tango
     {
-        public static string 01_Basic_Mode = "01_basic mode";
-		public static string 02_Choice_Of_Certificate = "02_choice of certificate";
-		public static string 05_Graphic_Allocation = "05_graphic allocation";
-		public static string 06_Text_Allocation = "06_text allocation";
-		public static string 07_Hand_Written_Input = "07_hand-written input";
-		public static string 08_Operation_Is_Impossible = "08_operation is impossible";
-		public static string 10_Change_Of_The_Vertical_Sizes = "10_change of the vertical sizes";
-		public static string 11_Change_Of_The_Horizontal_Sizes = "11_change of the horizontal sizes";
-		public static string 12_Change_Diagonal_Sizes_1 = "12_change diagonal sizes 1";
-		public static string 13_Change_Diagonal_Sizes_2 = "13_change diagonal sizes 2";
-		public static string 14_Moving = "14_moving";
-		public static string 15_Special_Allocation = "15_special allocation";
-		public static string 16_Reference_Choice = "16_reference choice";
-	}
+        public static string Basic_Mode = "01_basic mode";
+        public static string Choice_Of_Certificate = "02_choice of certificate";
+        public static string Graphic_Allocation = "05_graphic allocation";
+        public static string Text_Allocation = "06_text allocation";
+        public static string Hand_Written_Input = "07_hand-written input";
+        public static string Operation_Is_Impossible = "08_operation is impossible";
+        public static string Change_Of_The_Vertical_Sizes = "10_change of the vertical sizes";
+        public static string Change_Of_The_Horizontal_Sizes = "11_change of the horizontal sizes";
+        public static string Change_Diagonal_Sizes_1 = "12_change diagonal sizes 1";
+        public static string Change_Diagonal_Sizes_2 = "13_change diagonal sizes 2";
+        public static string Moving = "14_moving";
+        public static string Special_Allocation = "15_special allocation";
+        public static string Reference_Choice = "16_reference choice";
+    }
 }
 
 public static class Grey_Tango_Little
 {
-    public static string 01 = "01";
-	public static string 02 = "02";
-	public static string 05 = "05";
-	public static string 06 = "06";
-	public static string 07 = "07";
-	public static string 08 = "08";
-	public static string 09 = "09";
-	public static string 10 = "10";
-	public static string 11 = "11";
-	public static string 12 = "12";
-	public static string 13 = "13";
-	public static string 14 = "14";
-	public static string 15 = "15";
+    public static string UndefinedFieldName = "01";
+    public static string UndefinedFieldName = "02";
+    public static string UndefinedFieldName = "05";
+    public static string UndefinedFieldName = "06";
+    public static string UndefinedFieldName = "07";
+    public static string UndefinedFieldName = "08";
+    public static string UndefinedFieldName = "09";
+    public static string UndefinedFieldName = "10";
+    public static string UndefinedFieldName = "11";
+    public static string UndefinedFieldName = "12";
+    public static string UndefinedFieldName = "13";
+    public static string UndefinedFieldName = "14";
+    public static string UndefinedFieldName = "15";
 }
 
 public static class Grey_Tango_White
 {
-    public static string 01 = "01";
-	public static string 02 = "02";
-	public static string 05 = "05";
-	public static string 06 = "06";
-	public static string 07 = "07";
-	public static string 08 = "08";
-	public static string 09 = "09";
-	public static string 10 = "10";
-	public static string 11 = "11";
-	public static string 12 = "12";
-	public static string 13 = "13";
-	public static string 14 = "14";
-	public static string 15 = "15";
-	public static string 16 = "16";
+    public static string UndefinedFieldName = "01";
+    public static string UndefinedFieldName = "02";
+    public static string UndefinedFieldName = "05";
+    public static string UndefinedFieldName = "06";
+    public static string UndefinedFieldName = "07";
+    public static string UndefinedFieldName = "08";
+    public static string UndefinedFieldName = "09";
+    public static string UndefinedFieldName = "10";
+    public static string UndefinedFieldName = "11";
+    public static string UndefinedFieldName = "12";
+    public static string UndefinedFieldName = "13";
+    public static string UndefinedFieldName = "14";
+    public static string UndefinedFieldName = "15";
+    public static string UndefinedFieldName = "16";
 }
 
 public static class Incarnerry_Mark
@@ -2161,22 +2162,22 @@ public static class Token_Dark_Cursors
 
 public static class Token_Light_Inspired_Cursors
 {
-    public static string 01_Arrow = "01_arrow";
-	public static string 02_Help = "02_help";
-	public static string 05_Cross = "05_cross";
-	public static string 06_Move = "06_move";
-	public static string 07_Pen = "07_pen";
-	public static string 08_Unavailable = "08_unavailable";
-	public static string 09_Vertical_Resize = "09_vertical_resize";
-	public static string 10_Horizontal_Resize = "10_horizontal_resize";
-	public static string 11_Diagonal_Resize = "11_diagonal_resize";
-	public static string 12_Diagonal_Resize = "12_diagonal_resize";
-	public static string 13_Text = "13_text";
-	public static string 14_Up = "14_up";
-	public static string 15_Link_01 = "15_link_01";
-	public static string 16_Link_02 = "16_link_02";
-	public static string 17_Link_03 = "17_link_03";
-	public static string 18_Link_04 = "18_link_04";
+    public static string Arrow = "01_arrow";
+    public static string Help = "02_help";
+    public static string Cross = "05_cross";
+    public static string Move = "06_move";
+    public static string Pen = "07_pen";
+    public static string Unavailable = "08_unavailable";
+    public static string Vertical_Resize = "09_vertical_resize";
+    public static string Horizontal_Resize = "10_horizontal_resize";
+    public static string Diagonal_Resize = "11_diagonal_resize";
+    public static string Diagonal_Resize = "12_diagonal_resize";
+    public static string Text = "13_text";
+    public static string Up = "14_up";
+    public static string Link_01 = "15_link_01";
+    public static string Link_02 = "16_link_02";
+    public static string Link_03 = "17_link_03";
+    public static string Link_04 = "18_link_04";
 }
 
 public static class Volta_Ringlets

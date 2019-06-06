@@ -1,5 +1,4 @@
-﻿// #define NAMEDEBUG
-
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -7,7 +6,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json;
 using TexturePacker.Lib;
 
 namespace CursorModeler
@@ -23,9 +21,7 @@ namespace CursorModeler
         {
             string json;
             using (WebClient wc = new WebClient())
-            {
                 json = wc.DownloadString(ATLAS_URL);
-            }
 
             var atlas = JsonConvert.DeserializeObject<Atlas>(json);
             var nameMapping = atlas.Nodes.Select(node => GetName(node.Texture.Source));
@@ -52,9 +48,9 @@ namespace CursorModeler
             Console.Read();
         }
 
-        private  static string EnclosingString(string prefix, string str, string suffix)
+        private static string EnclosingString(string prefix, string str, string suffix)
         {
-            return $"{prefix}\n\n{str}\n\n{suffix};"
+            return $"{prefix}\n\n{str}\n\n{suffix}";
         }
 
         private static Dictionary<string, string> GetDictionary(IEnumerable<Tuple<string, string>> tupledItems)
@@ -65,8 +61,6 @@ namespace CursorModeler
             {
                 if (!dict.ContainsKey(item.Item1))
                     dict.Add(item.Item1, item.Item2);
-                //else
-                //    Console.WriteLine($"[Name={item.Item1}, FileName={item.Item2}] -- Already added!");
             }
 
             return dict;
@@ -149,45 +143,12 @@ namespace CursorModeler
             name = name.Replace(@".Png", string.Empty);
             name = name.Replace("\\", "/");
 
-#if NAMEDEBUG
-            // Console.WriteLine($"Subpaths: " + Regex.Matches(name, @"\\").Count);
-            // Console.WriteLine($"Matches: {Regex.Matches(name, match).Count} || Name: {name}");
-            Console.WriteLine("[FileName={0}, Name={1}]", fileName, name);
-#endif
-
             return new Tuple<string, string>(name, fileName);
         }
 
         private static string RemoveBy(string title)
         {
             return Regex.Replace(title, @"By_.+?\\", "\\");
-        }
-    }
-
-    public static class Ext
-    {
-        public static IEnumerable<T> TakeLast<T>(this IEnumerable<T> source, int N)
-        {
-            return source.Skip(Math.Max(0, source.Count() - N));
-        }
-
-        public static IEnumerable<T> TakeAllButLast<T>(this IEnumerable<T> source)
-        {
-            var it = source.GetEnumerator();
-            bool hasRemainingItems = false;
-            bool isFirst = true;
-            T item = default(T);
-
-            do
-            {
-                hasRemainingItems = it.MoveNext();
-                if (hasRemainingItems)
-                {
-                    if (!isFirst) yield return item;
-                    item = it.Current;
-                    isFirst = false;
-                }
-            } while (hasRemainingItems);
         }
     }
 }
