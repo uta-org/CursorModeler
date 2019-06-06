@@ -1,7 +1,5 @@
 #if IS_POC
 
-public static string GlobalCursorDB = "";
-
 public static class A0x
 {
     public static string Arrow = "Arrow";
@@ -77,7 +75,7 @@ public static class Comix
         public static string Uparrow = "";
     }
 
-    public static class Black
+    public static partial class Black
     {
         public static string Sizenesw = "SizeNESW";
         public static string Sizens = "SizeNS";
@@ -133,7 +131,7 @@ public static class Comix
 
 public static class Continuum_Knot
 {
-    public static class Blue
+    public static partial class Blue
     {
         public static string Alternate_Select = "continuum knot alternate select";
         public static string Busy = "continuum knot busy";
@@ -190,7 +188,7 @@ public static class Continuum_Knot
         public static string Working_In_Background = "continuum knot working in background";
     }
 
-    public static class Orange
+    public static partial class Orange
     {
         public static string Alternate_Select = "continuum knot alternate select";
         public static string Busy = "continuum knot busy";
@@ -266,7 +264,7 @@ public static class Continuum_Knot
         public static string Working_In_Background = "continuum knot working in background";
     }
 
-    public static class White
+    public static partial class White
     {
         public static string Alternate_Select = "continuum knot alternate select";
         public static string Busy = "continuum knot busy";
@@ -338,7 +336,7 @@ public static class Denial
     public static string Unavailable = "Unavailable";
     public static string Verticalresize = "VerticalResize";
 
-    public static class Blue
+    public static partial class Blue
     {
         public static string Alternate = "Alternate";
         public static string Diagonalresize1 = "DiagonalResize1";
@@ -688,7 +686,7 @@ public static class Forma_NovaAlternatives
 
 public static class Frequence
 {
-    public static class Black
+    public static partial class Black
     {
         public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
@@ -711,7 +709,7 @@ public static class Frequence
         public static string Vertical = "Frequence Vertical";
     }
 
-    public static class Blue
+    public static partial class Blue
     {
         public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
@@ -752,7 +750,7 @@ public static class Frequence
         public static string Vertical = "Frequence Vertical";
     }
 
-    public static class Green
+    public static partial class Green
     {
         public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
@@ -954,7 +952,7 @@ public static class Ml_Blau
 
 public static class Ml_Blau_3
 {
-    public static class Ml_Blau
+    public static partial class Ml_Blau
     {
         public static string Alternate_Hires = "ml_blau_alternate_hires";
         public static string Diagonal_Left_Hires = "ml_blau_diagonal_left_hires";
@@ -972,7 +970,7 @@ public static class Ml_Blau_3
     }
 }
 
-public static class Ml_Blau
+public static partial class Ml_Blau
 {
     public static string Alternate_Hires = "ml_blau_alternate_hires";
     public static string Diagonal_Left_Hires = "ml_blau_diagonal_left_hires";
@@ -1082,7 +1080,7 @@ public static class Moonshine_V3
 
 public static class Moonshine_V1
 {
-    public static class Blue
+    public static partial class Blue
     {
         public static string Moonshine_Alternate = "MoonShine_Alternate";
         public static string Moonshine_CD_Bonus = "MoonShine_CD_Bonus";
@@ -1125,7 +1123,7 @@ public static class Neutral
 
 public static class Oxygen_Cursors
 {
-    public static class Black
+    public static partial class Black
     {
         public static string Cross = "cross";
         public static string Forbidden = "forbidden";
@@ -1142,7 +1140,7 @@ public static class Oxygen_Cursors
         public static string Up_Arrow = "up_arrow";
     }
 
-    public static class Blue
+    public static partial class Blue
     {
         public static string Cross = "cross";
         public static string Forbidden = "forbidden";
@@ -1261,7 +1259,7 @@ public static class Oxygen_Cursors
         public static string Up_Arrow = "up_arrow";
     }
 
-    public static class Green
+    public static partial class Green
     {
         public static string Cross = "cross";
         public static string Forbidden = "forbidden";
@@ -1516,7 +1514,7 @@ public static class Oxygen_Cursors
         public static string Up_Arrow = "up_arrow";
     }
 
-    public static class Purple
+    public static partial class Purple
     {
         public static string Cross = "cross";
         public static string Forbidden = "forbidden";
@@ -1533,7 +1531,7 @@ public static class Oxygen_Cursors
         public static string Up_Arrow = "up_arrow";
     }
 
-    public static class Red
+    public static partial class Red
     {
         public static string Cross = "cross";
         public static string Forbidden = "forbidden";
@@ -1669,7 +1667,7 @@ public static class Oxygen_Cursors
         public static string Up_Arrow = "up_arrow";
     }
 
-    public static class White
+    public static partial class White
     {
         public static string Cross = "cross";
         public static string Forbidden = "forbidden";
@@ -1720,7 +1718,7 @@ public static class Oxygen_Cursors
         public static string Up_Arrow = "up_arrow";
     }
 
-    public static class Yellow
+    public static partial class Yellow
     {
         public static string Cross = "cross";
         public static string Forbidden = "forbidden";
@@ -1774,7 +1772,7 @@ public static class Polar
 
 public static class Radix_Phantasma
 {
-    public static class Blue
+    public static partial class Blue
     {
         public static string Alternate_Select = "radix phantasma alternate select";
         public static string Busy = "radix phantasma busy";
@@ -1793,7 +1791,7 @@ public static class Radix_Phantasma
         public static string Working_In_Background = "radix phantasma working in background";
     }
 
-    public static class Green
+    public static partial class Green
     {
         public static string Alternate_Select = "radix phantasma alternate select";
         public static string Busy = "radix phantasma busy";
@@ -1812,7 +1810,7 @@ public static class Radix_Phantasma
         public static string Working_In_Background = "radix phantasma working in background";
     }
 
-    public static class Red
+    public static partial class Red
     {
         public static string Alternate_Select = "radix phantasma alternate select";
         public static string Busy = "radix phantasma busy";
@@ -1834,7 +1832,7 @@ public static class Radix_Phantasma
 
 public static class Sophicon_Redux
 {
-    public static class Blue
+    public static partial class Blue
     {
         public static string Alternate_Select = "sophicon redux alternate select";
         public static string Busy = "sophicon redux busy";
@@ -1853,7 +1851,7 @@ public static class Sophicon_Redux
         public static string Working_In_Background = "sophicon redux working in background";
     }
 
-    public static class Red
+    public static partial class Red
     {
         public static string Alternate_Select = "sophicon redux alternate select";
         public static string Busy = "sophicon redux busy";
@@ -1877,25 +1875,25 @@ public static class Streetlight_V2
 {
     public static class Darkgray
     {
-        public static class Alternate
+        public static partial class Alternate
         {
             public static string Darkgray_Alternate_2 = "darkGray Alternate (2)";
             public static string Darkgray_Alternate_1 = "darkGray Alternate 1)";
         }
 
-        public static class Diagonal_1
+        public static partial class Diagonal_1
         {
             public static string Darkgray_Diagonal_1_1 = "";
             public static string Darkgray_Diagonal_1_2 = "";
         }
 
-        public static class Diagonal_2
+        public static partial class Diagonal_2
         {
             public static string Darkgray_Diagonal_2_1 = "";
             public static string Darkgray_Diagonal_2_2 = "";
         }
 
-        public static class Handwriting
+        public static partial class Handwriting
         {
             public static string Darkgray_Shadow_Handwriting_1 = "";
             public static string Darkgray_Shadow_Handwriting_2 = "";
@@ -1907,7 +1905,7 @@ public static class Streetlight_V2
             public static string Darkgray_Handwriting_4 = "";
         }
 
-        public static class Help
+        public static partial class Help
         {
             public static string Darkgray_Help_1 = "";
             public static string Darkgray_Help_2 = "";
@@ -1915,37 +1913,37 @@ public static class Streetlight_V2
             public static string Darkgray_Help_4 = "";
         }
 
-        public static class Horizontal
+        public static partial class Horizontal
         {
             public static string Darkgray_Horizontal_1 = "";
             public static string Darkgray_Horizontal_2 = "";
         }
 
-        public static class Link
+        public static partial class Link
         {
             public static string Darkgray_Link = "";
         }
 
-        public static class Move
+        public static partial class Move
         {
             public static string Darkgray_Move_1 = "";
             public static string Darkgray_Move_2 = "";
         }
 
-        public static class Normal
+        public static partial class Normal
         {
             public static string Darkgray_Normal_1 = "";
             public static string Darkgray_Normal_2 = "";
         }
 
-        public static class Precision
+        public static partial class Precision
         {
             public static string Darkgray_Precision_1 = "";
             public static string Darkgray_Precision_2 = "";
             public static string Darkgray_Precision_3 = "";
         }
 
-        public static class Text
+        public static partial class Text
         {
             public static string Darkgray_Text_1_Short = "";
             public static string Darkgray_Text_1 = "";
@@ -1955,41 +1953,41 @@ public static class Streetlight_V2
             public static string Darkgray_Text_3 = "";
         }
 
-        public static class Unavailable
+        public static partial class Unavailable
         {
             public static string Darkgray_Unavailable_1 = "";
             public static string Darkgray_Unavailable_2 = "";
         }
 
-        public static class Vertical
+        public static partial class Vertical
         {
             public static string Darkgray_Vertical_1 = "";
             public static string Darkgray_Vertical_2 = "";
         }
     }
 
-    public static class Alternate
+    public static partial class Alternate
     {
         public static string Alternate_1 = "";
         public static string Alternate_2 = "";
         public static string Alternate_3 = "";
     }
 
-    public static class Diagonal_1
+    public static partial class Diagonal_1
     {
         public static string Diagonal_1_1 = "";
         public static string Diagonal_1_2 = "";
         public static string Diagonal_1_3 = "";
     }
 
-    public static class Diagonal_2
+    public static partial class Diagonal_2
     {
         public static string Diagonal_2_1 = "";
         public static string Diagonal_2_2 = "";
         public static string Diagonal_2_3 = "";
     }
 
-    public static class Handwriting
+    public static partial class Handwriting
     {
         public static string Shadow_Handrwiting_1 = "";
         public static string Shadow_Handrwiting_2 = "";
@@ -2015,7 +2013,7 @@ public static class Streetlight_V2
         public static string Handwriting_4 = "";
     }
 
-    public static class Help
+    public static partial class Help
     {
         public static string Help_1 = "";
         public static string Help_2 = "";
@@ -2028,35 +2026,35 @@ public static class Streetlight_V2
         public static string Help_9 = "";
     }
 
-    public static class Horizontal
+    public static partial class Horizontal
     {
         public static string Horizontal_1 = "";
         public static string Horizontal_2 = "";
         public static string Horizontal_3 = "";
     }
 
-    public static class Link
+    public static partial class Link
     {
         public static string Link_1 = "";
         public static string Link_2 = "";
         public static string Link = "";
     }
 
-    public static class Move
+    public static partial class Move
     {
         public static string Move_1 = "";
         public static string Move_2 = "";
         public static string Move_3 = "";
     }
 
-    public static class Normal
+    public static partial class Normal
     {
         public static string Normal_1 = "";
         public static string Normal_2 = "";
         public static string Normal_3 = "";
     }
 
-    public static class Precision
+    public static partial class Precision
     {
         public static string Precision_1 = "";
         public static string Precision_2 = "";
@@ -2065,7 +2063,7 @@ public static class Streetlight_V2
         public static string Precision_5 = "";
     }
 
-    public static class Text
+    public static partial class Text
     {
         public static string Text_1_Short = "";
         public static string Text_1 = "";
@@ -2079,20 +2077,20 @@ public static class Streetlight_V2
         public static string Text_5 = "";
     }
 
-    public static class Unavailable
+    public static partial class Unavailable
     {
         public static string Unavailable_1 = "";
         public static string Unavailable_2 = "";
     }
 
-    public static class Vertical
+    public static partial class Vertical
     {
         public static string Vertical_1 = "";
         public static string Vertical_2 = "";
         public static string Vertical_3 = "";
     }
 
-    public static class Handwriting
+    public static partial class Handwriting
     {
         public static string Shadow_Handrwiting_1 = "";
         public static string Shadow_Handrwiting_2 = "";
@@ -2118,7 +2116,7 @@ public static class Streetlight_V2
         public static string Handwriting_4 = "";
     }
 
-    public static class Link
+    public static partial class Link
     {
         public static string Link_1 = "";
         public static string Link_2 = "";
@@ -2224,6 +2222,74 @@ public static class Yin_Yang_Cursor
     public static string YY7 = "YY7";
     public static string YY8 = "YY8";
     public static string YY9 = "YY9";
+}
+
+public static class GlobalCursorDB
+{
+    public static string Aero_Arrow = "";
+    public static string Aero_Arrow_L = "";
+    public static string Aero_Arrow_Xl = "";
+    public static string Aero_Ew = "";
+    public static string Aero_Ew_L = "";
+    public static string Aero_Ew_Xl = "";
+    public static string Aero_Helpsel = "";
+    public static string Aero_Helpsel_L = "";
+    public static string Aero_Helpsel_Xl = "";
+    public static string Aero_Link = "";
+    public static string Aero_Link_L = "";
+    public static string Aero_Link_Xl = "";
+    public static string Aero_Move = "";
+    public static string Aero_Move_L = "";
+    public static string Aero_Move_Xl = "";
+    public static string Aero_Nesw = "";
+    public static string Aero_Nesw_L = "";
+    public static string Aero_Nesw_Xl = "";
+    public static string Aero_Ns = "";
+    public static string Aero_Ns_L = "";
+    public static string Aero_Ns_Xl = "";
+    public static string Aero_Nwse = "";
+    public static string Aero_Nwse_L = "";
+    public static string Aero_Nwse_Xl = "";
+    public static string Aero_Pen = "";
+    public static string Aero_Pen_L = "";
+    public static string Aero_Pen_Xl = "";
+    public static string Aero_Person = "";
+    public static string Aero_Person_L = "";
+    public static string Aero_Person_Xl = "";
+    public static string Aero_Pin = "";
+    public static string Aero_Pin_L = "";
+    public static string Aero_Pin_Xl = "";
+    public static string Aero_Unavail = "";
+    public static string Aero_Unavail_L = "";
+    public static string Aero_Unavail_Xl = "";
+    public static string Aero_Up = "";
+    public static string Aero_Up_L = "";
+    public static string Aero_Up_Xl = "";
+    public static string Lperson = "";
+    public static string Lpin = "";
+    public static string Person_L = "";
+    public static string Person_M = "";
+    public static string Person_R = "";
+    public static string Person_Rl = "";
+    public static string Person_Rm = "";
+    public static string Pin_L = "";
+    public static string Pin_M = "";
+    public static string Pin_R = "";
+    public static string Pin_Rl = "";
+    public static string Pin_Rm = "";
+    public static string Forma_NovaAlt = "";
+    public static string Forma_NovaArrow = "";
+    public static string Forma_NovaEw = "";
+    public static string Forma_NovaHelp = "";
+    public static string Forma_NovaLink = "";
+    public static string Forma_NovaMove = "";
+    public static string Forma_NovaNesw = "";
+    public static string Forma_NovaNs = "";
+    public static string Forma_NovaNwse = "";
+    public static string Forma_NovaPen = "";
+    public static string Forma_NovaPrec = "";
+    public static string Forma_NovaSelect = "";
+    public static string Forma_NovaUnavail = "";
 }
 
 #endif

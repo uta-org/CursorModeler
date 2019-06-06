@@ -100,7 +100,7 @@ namespace CursorModeler.Tests
             {
                 string indenter = new string('\t', count);
 
-                var @class = indenter + GenerateClass(node.Value).Replace(Environment.NewLine, Environment.NewLine + indenter);
+                var @class = indenter + GenerateClass(node.Value, out bool isAlreadyAdded).Replace(Environment.NewLine, Environment.NewLine + indenter);
 
                 if (node.Childs.Count > 0)
                 {
@@ -108,13 +108,15 @@ namespace CursorModeler.Tests
                     sb.AppendLine(OutputRecursiveNode(node.Childs, getFieldValue, count));
 
                     if (!string.IsNullOrEmpty(@class))
-                        sb.AppendLine(indenter + "}");
+                        sb.AppendLine(indenter + "}" + (isAlreadyAdded ? "*/" : string.Empty));
 
                     sb.AppendLine();
                 }
                 else
                 {
-                    string field = GenerateField(node.Value, getFieldValue(node.CurrentParent + UsedSeparator + node.Value));
+                    string realPath = node.CurrentParent + UsedSeparator + node.Value,
+                           field = GenerateField(node.Value, getFieldValue(realPath), realPath);
+
                     sb.AppendLine(indenter + field);
                 }
             }
@@ -122,18 +124,23 @@ namespace CursorModeler.Tests
             return sb.ToString();
         }
 
-        private static HashSet<string> classNames = new HashSet<string>();
+        private static HashSet<string> classNames = new HashSet<string>(),
+                                       fieldNames = new HashSet<string>();
 
         // We don't use CodeDom due to simplicity
-        private static string GenerateClass(string name)
+        private static string GenerateClass(string name, out bool isAlreadyAdded)
         {
             if (string.IsNullOrEmpty(name))
+            {
+                isAlreadyAdded = false;
                 return string.Empty;
+            }
 
             string cleanedName = GetCleanClassName(name);
-            bool isAlreadyOnList = classNames.Add(cleanedName);
+            isAlreadyAdded = !classNames.Add(cleanedName);
 
-            return $"public static {(isAlreadyOnList ? "partial" : string.Empty)} class {cleanedName}{Environment.NewLine}{{";
+            // {(isAlreadyAdded ? "partial" : string.Empty)}
+            return $"{(isAlreadyAdded ? "/*" : string.Empty)}public static class {cleanedName}{Environment.NewLine}{{";
         }
 
         private static string GetCleanClassName(string name)
@@ -144,7 +151,7 @@ namespace CursorModeler.Tests
             return name;
         }
 
-        private static string GenerateField(string name, string fieldValue)
+        private static string GenerateField(string name, string fieldValue, string realPath)
         {
             if (string.IsNullOrEmpty(name))
                 return string.Empty;
@@ -157,7 +164,10 @@ namespace CursorModeler.Tests
             if (name.StartsWith("_"))
                 name = name.Substring(1);
 
-            return $@"public static string {(isNumber ? "UndefinedFieldName" : name)} = ""{fieldValue}"";";
+            string finalName = isNumber ? "UndefinedFieldName" : name;
+            bool isAlreadyAdded = !fieldNames.Add(realPath);
+
+            return (isAlreadyAdded ? "// " : string.Empty) + $@"public static string {finalName} = ""{fieldValue}"";";
         }
     }
 
