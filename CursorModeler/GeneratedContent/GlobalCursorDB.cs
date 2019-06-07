@@ -33,12 +33,17 @@ namespace GeneratedContent
                 using (var wc = new WebClient())
                     json = wc.DownloadString(ATLAS_URL);
 
-                m_KeyPairMap = JsonConvert.DeserializeObject<Atlas>(json).Nodes.Select(n => new
+                m_KeyPairMap = new Dictionary<string, string>();
+
+                JsonConvert.DeserializeObject<Atlas>(json).Nodes.Select(n => new
                 {
                     Name = GetFormattedName(n.Texture.Source),
                     FileName = Path.GetFileNameWithoutExtension(n.Texture.Source)
-                })
-                    .ToDictionary(t => t.Name, t => t.FileName);
+                }).ToList().ForEach(anon =>
+                {
+                    if (!m_KeyPairMap.ContainsKey(anon.Name))
+                        m_KeyPairMap.Add(anon.Name, anon.FileName);
+                });
             }
         }
 
@@ -70,7 +75,7 @@ namespace GeneratedContent
             string typeName = type.FullName,
                    fullName = Map[key].Where(m => m.Contains(typeName))
                        .ElementAt(matchIndex == -1 ? 0 : matchIndex),
-                   fieldName = fullName.Split('/')[0],
+                   fieldName = fullName.Split('/')[1],
                    fieldValue = (string)type.GetField(fieldName).GetValue(null);
 
             return fieldValue;

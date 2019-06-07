@@ -92,25 +92,6 @@ namespace CursorModeler
                 // (Dictionary<string, List<string>>)
                 JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(File.ReadAllText(jsonFile)); //, typeof(Dictionary<string, List<string>>));
 
-            //foreach (var kv in dictionary)
-            //{
-            //    MouseCursor key = (MouseCursor)Enum.Parse(typeof(MouseCursor), kv.Key);
-
-            //    try
-            //    {
-            //        if (GlobalCursorDB.Map.ContainsKey(key))
-            //            Console.WriteLine($"Key '{kv.Key}' is already present on dictionary!");
-            //        else
-            //            GlobalCursorDB.Map.Add(key, kv.Value);
-            //    }
-            //    catch
-            //    {
-            //        Console.WriteLine($"Error on key '{key}'!");
-            //    }
-            //}
-
-            // .ToDictionary(t => (MouseCursor)Enum.Parse(typeof(MouseCursor), t.Key), t => t.Value);
-
             Console.WriteLine($"From Enum: {GlobalCursorDB.GetCursorReference(MouseCursor.Move)}");
             Console.WriteLine($"From Generic Type: {GlobalCursorDB.GetCursorReference<Comix.Black>("Diagonal2")}");
 #endif
@@ -190,73 +171,5 @@ namespace CursorModeler
 
             return new Tuple<string, string>(name, fileName);
         }
-    }
-
-    public static class JTokenExt
-    {
-        //public static Dictionary<string, T>
-        //    Bagify<T>(this JToken obj, string name = null)
-        //{
-        //    name = name ?? "obj";
-        //    if (obj is JObject)
-        //    {
-        //        var asBag = (obj as JObject).Properties()
-        //            .Select(prop => new { prop, propName = prop.Name })
-        //            .Select(@t => new
-        //            {
-        //                @t,
-        //                propValue = @t.prop.Value is JValue
-        //                    ? new Dictionary<string, T>() { { @t.prop.Name, @t.prop.Value.ToObject<T>() } }
-        //                    : @t.prop.Value.Bagify<T>(@t.prop.Name)
-        //            })
-        //            .Select(@t => new KeyValuePair<string, T>(@t.@t.propName, @t.propValue));
-        //        return asBag.ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
-        //    }
-        //    if (obj is JArray)
-        //    {
-        //        var vals = (obj as JArray).Values();
-        //        var alldicts = vals
-        //            .SelectMany(val => val.Bagify(name))
-        //            .Select(x => x.Value)
-        //            .ToArray();
-        //        return new Dictionary<string, object>()
-        //        {
-        //            {name, (object)alldicts}
-        //        };
-        //    }
-        //    if (obj is JValue)
-        //    {
-        //        return new Dictionary<string, object>()
-        //        {
-        //            {name, (obj as JValue)}
-        //        };
-        //    }
-        //    return new Dictionary<string, object>()
-        //    {
-        //        {name, null}
-        //    };
-        //}
-
-        //public static IDictionary<string, T> ToDictionary<T>(this JObject @object)
-        //{
-        //    var result = @object.ToObject<Dictionary<string, T>>();
-
-        //    var JObjectKeys = (from r in result
-        //                       let key = r.Key
-        //                       let value = r.Value
-        //                       where value.GetType() == typeof(JObject)
-        //                       select key).ToList();
-
-        //    var JArrayKeys = (from r in result
-        //                      let key = r.Key
-        //                      let value = r.Value
-        //                      where value.GetType() == typeof(JArray)
-        //                      select key).ToList();
-
-        //    JArrayKeys.ForEach(key => result[key] = ((JArray)(object)result[key]).Values().Select(x => ((JValue)x).Value).ToArray());
-        //    JObjectKeys.ForEach(key => result[key] = ToDictionary(result[key] as JObject));
-
-        //    return result;
-        //}
     }
 }
