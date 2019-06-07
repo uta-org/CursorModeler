@@ -1,5 +1,4 @@
 using System;
-using CursorModeler;
 
 #if IS_POC
 
@@ -15,6 +14,7 @@ namespace GeneratedContent
         public static string Sizeall = "SizeAll";
         public static string Uparrow = "UpArrow";
         public static string Cd_Busy = "cd_busy";
+
         public class Drag_Drop_For_Ole32Dll
         : GlobalCursorDB
         {
@@ -22,10 +22,7 @@ namespace GeneratedContent
             public static string Drag_2 = "Drag_2";
             public static string Drag_3 = "Drag_3";
             public static string Drag_4 = "Drag_4";
-
         }
-
-
     }
 
     public class Comix
@@ -50,7 +47,6 @@ namespace GeneratedContent
             public static string Text = "text";
             public static string Unavailable = "unavailable";
             public static string Vertical = "vertical";
-
         }
 
         public class White
@@ -59,17 +55,16 @@ namespace GeneratedContent
             public static string Arrow = "Arrow";
             public static string Cross = "Cross";
             public static string Hand = "Hand";
-            // public static string Handwriting = "handwriting";
-            // public static string Help = "help";
+            public static string Handwriting = "handwriting";
+            public static string Help = "help";
             public static string Ibeam = "Ibeam";
-            // public static string Move = "move";
+            public static string Move = "move";
             public static string NO = "NO";
-            // public static string Sizenesw = "SizeNESW";
-            // public static string Sizens = "SizeNS";
-            // public static string Sizenwse = "SizeNWSE";
-            // public static string Sizewe = "SizeWE";
+            public static string Sizenesw = "SizeNESW";
+            public static string Sizens = "SizeNS";
+            public static string Sizenwse = "SizeNWSE";
+            public static string Sizewe = "SizeWE";
             public static string Uparrow = "Uparrow";
-
         }
 
         public class RedAndBack
@@ -77,85 +72,59 @@ namespace GeneratedContent
         {
             public static string Arrow = "Arrow";
             public static string Crosshair = "Crosshair";
-            // public static string Hand = "Hand";
-            // public static string Ibeam = "Ibeam";
+            public static string Hand = "Hand";
+            public static string Ibeam = "Ibeam";
             public static string No = "No";
             public static string Nwpen = "Nwpen";
             public static string Sizeall = "Sizeall";
-            // public static string Sizenesw = "SizeNESW";
-            // public static string Sizens = "SizeNS";
-            // public static string Sizenwse = "SizeNWSE";
-            // public static string Sizewe = "SizeWE";
-            // public static string Uparrow = "Uparrow";
-
+            public static string Sizenesw = "SizeNESW";
+            public static string Sizens = "SizeNS";
+            public static string Sizenwse = "SizeNWSE";
+            public static string Sizewe = "SizeWE";
+            public static string Uparrow = "Uparrow";
         }
-
-        /*public class Black
-        : GlobalCursorDB {
-public static string Sizenesw = "SizeNESW";
-            // public static string Sizens = "SizeNS";
-            // public static string Sizenwse = "SizeNWSE";
-            // public static string Sizewe = "SizeWE";
-            // public static string Alternate = "alternate";
-            // public static string Diagonal1 = "diagonal1";
-            // public static string Diagonal2 = "diagonal2";
-            // public static string Handwriting = "handwriting";
-            // public static string Help = "help";
-            // public static string Horizontal = "horizontal";
-            // public static string Link = "link";
-            // public static string Move = "move";
-            // public static string Normal = "normal";
-            // public static string Precision = "precision";
-            // public static string Text = "text";
-            // public static string Unavailable = "unavailable";
-            // public static string Vertical = "vertical";
-
-        }*/
 
         public class Blue
         : GlobalCursorDB
         {
             public static string Arrow = "Arrow";
-            // public static string Crosshair = "Crosshair";
-            // public static string Hand = "Hand";
-            // public static string Ibeam = "Ibeam";
-            // public static string No = "No";
-            // public static string Nwpen = "Nwpen";
-            // public static string Sizeall = "Sizeall";
-            // public static string Sizenesw = "SizeNESW";
-            // public static string Sizens = "SizeNS";
-            // public static string Sizenwse = "SizeNWSE";
-            // public static string Sizewe = "SizeWE";
-            // public static string Uparrow = "Uparrow";
-
+            public static string Crosshair = "Crosshair";
+            public static string Hand = "Hand";
+            public static string Ibeam = "Ibeam";
+            public static string No = "No";
+            public static string Nwpen = "Nwpen";
+            public static string Sizeall = "Sizeall";
+            public static string Sizenesw = "SizeNESW";
+            public static string Sizens = "SizeNS";
+            public static string Sizenwse = "SizeNWSE";
+            public static string Sizewe = "SizeWE";
+            public static string Uparrow = "Uparrow";
         }
 
         public class Orange
         : GlobalCursorDB
         {
             public static string Arrow = "Arrow";
-            // public static string Crosshair = "Crosshair";
-            // public static string Hand = "Hand";
-            // public static string Ibeam = "Ibeam";
-            // public static string No = "No";
-            // public static string Nwpen = "Nwpen";
-            // public static string Sizeall = "Sizeall";
-            // public static string Sizenesw = "SizeNESW";
-            // public static string Sizens = "SizeNS";
-            // public static string Sizenwse = "SizeNWSE";
-            // public static string Sizewe = "SizeWE";
-            // public static string Uparrow = "Uparrow";
-
+            public static string Crosshair = "Crosshair";
+            public static string Hand = "Hand";
+            public static string Ibeam = "Ibeam";
+            public static string No = "No";
+            public static string Nwpen = "Nwpen";
+            public static string Sizeall = "Sizeall";
+            public static string Sizenesw = "SizeNESW";
+            public static string Sizens = "SizeNS";
+            public static string Sizenwse = "SizeNWSE";
+            public static string Sizewe = "SizeWE";
+            public static string Uparrow = "Uparrow";
         }
-
-
     }
 
     public class Continuum_Knot
     {
-        /*public class Blue
-        : GlobalCursorDB {
-public static string Alternate_Select = "continuum knot alternate select";
+        public class Blue
+        : GlobalCursorDB
+        {
+            public static string Alternate_Select = "continuum knot alternate select";
             public static string Busy = "continuum knot busy";
             public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
             public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
@@ -170,176 +139,167 @@ public static string Alternate_Select = "continuum knot alternate select";
             public static string Unavailable = "continuum knot unavailable";
             public static string Vertical_Resize = "continuum knot vertical resize";
             public static string Working_In_Background = "continuum knot working in background";
-
-        }*/
+        }
 
         public class Gray
         : GlobalCursorDB
         {
             public static string Alternate_Select = "continuum knot alternate select";
-            // public static string Busy = "continuum knot busy";
-            // public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
-            // public static string Handwriting = "continuum knot handwriting";
-            // public static string Help_Select = "continuum knot help select";
-            // public static string Horizontal_Resize = "continuum knot horizontal resize";
-            // public static string Link_Select = "continuum knot link select";
-            // public static string Move = "continuum knot move";
-            // public static string Normal_Select = "continuum knot normal select";
-            // public static string Precision_Select = "continuum knot precision select";
-            // public static string Text_Select = "continuum knot text select";
-            // public static string Unavailable = "continuum knot unavailable";
-            // public static string Vertical_Resize = "continuum knot vertical resize";
-            // public static string Working_In_Background = "continuum knot working in background";
-
+            public static string Busy = "continuum knot busy";
+            public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
+            public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
+            public static string Handwriting = "continuum knot handwriting";
+            public static string Help_Select = "continuum knot help select";
+            public static string Horizontal_Resize = "continuum knot horizontal resize";
+            public static string Link_Select = "continuum knot link select";
+            public static string Move = "continuum knot move";
+            public static string Normal_Select = "continuum knot normal select";
+            public static string Precision_Select = "continuum knot precision select";
+            public static string Text_Select = "continuum knot text select";
+            public static string Unavailable = "continuum knot unavailable";
+            public static string Vertical_Resize = "continuum knot vertical resize";
+            public static string Working_In_Background = "continuum knot working in background";
         }
 
         public class Green
         : GlobalCursorDB
         {
             public static string Alternate_Select = "continuum knot alternate select";
-            // public static string Busy = "continuum knot busy";
-            // public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
-            // public static string Handwriting = "continuum knot handwriting";
-            // public static string Help_Select = "continuum knot help select";
-            // public static string Horizontal_Resize = "continuum knot horizontal resize";
-            // public static string Link_Select = "continuum knot link select";
-            // public static string Move = "continuum knot move";
-            // public static string Normal_Select = "continuum knot normal select";
-            // public static string Precision_Select = "continuum knot precision select";
-            // public static string Text_Select = "continuum knot text select";
-            // public static string Unavailable = "continuum knot unavailable";
-            // public static string Vertical_Resize = "continuum knot vertical resize";
-            // public static string Working_In_Background = "continuum knot working in background";
-
+            public static string Busy = "continuum knot busy";
+            public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
+            public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
+            public static string Handwriting = "continuum knot handwriting";
+            public static string Help_Select = "continuum knot help select";
+            public static string Horizontal_Resize = "continuum knot horizontal resize";
+            public static string Link_Select = "continuum knot link select";
+            public static string Move = "continuum knot move";
+            public static string Normal_Select = "continuum knot normal select";
+            public static string Precision_Select = "continuum knot precision select";
+            public static string Text_Select = "continuum knot text select";
+            public static string Unavailable = "continuum knot unavailable";
+            public static string Vertical_Resize = "continuum knot vertical resize";
+            public static string Working_In_Background = "continuum knot working in background";
         }
 
-        /*public class Orange
-        : GlobalCursorDB {
-public static string Alternate_Select = "continuum knot alternate select";
-            // public static string Busy = "continuum knot busy";
-            // public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
-            // public static string Handwriting = "continuum knot handwriting";
-            // public static string Help_Select = "continuum knot help select";
-            // public static string Horizontal_Resize = "continuum knot horizontal resize";
-            // public static string Link_Select = "continuum knot link select";
-            // public static string Move = "continuum knot move";
-            // public static string Normal_Select = "continuum knot normal select";
-            // public static string Precision_Select = "continuum knot precision select";
-            // public static string Text_Select = "continuum knot text select";
-            // public static string Unavailable = "continuum knot unavailable";
-            // public static string Vertical_Resize = "continuum knot vertical resize";
-            // public static string Working_In_Background = "continuum knot working in background";
-
-        }*/
+        public class Orange
+        : GlobalCursorDB
+        {
+            public static string Alternate_Select = "continuum knot alternate select";
+            public static string Busy = "continuum knot busy";
+            public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
+            public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
+            public static string Handwriting = "continuum knot handwriting";
+            public static string Help_Select = "continuum knot help select";
+            public static string Horizontal_Resize = "continuum knot horizontal resize";
+            public static string Link_Select = "continuum knot link select";
+            public static string Move = "continuum knot move";
+            public static string Normal_Select = "continuum knot normal select";
+            public static string Precision_Select = "continuum knot precision select";
+            public static string Text_Select = "continuum knot text select";
+            public static string Unavailable = "continuum knot unavailable";
+            public static string Vertical_Resize = "continuum knot vertical resize";
+            public static string Working_In_Background = "continuum knot working in background";
+        }
 
         public class Pink
         : GlobalCursorDB
         {
             public static string Alternate_Select = "continuum knot alternate select";
-            // public static string Busy = "continuum knot busy";
-            // public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
-            // public static string Handwriting = "continuum knot handwriting";
-            // public static string Help_Select = "continuum knot help select";
-            // public static string Horizontal_Resize = "continuum knot horizontal resize";
-            // public static string Link_Select = "continuum knot link select";
-            // public static string Move = "continuum knot move";
-            // public static string Normal_Select = "continuum knot normal select";
-            // public static string Precision_Select = "continuum knot precision select";
-            // public static string Text_Select = "continuum knot text select";
-            // public static string Unavailable = "continuum knot unavailable";
-            // public static string Vertical_Resize = "continuum knot vertical resize";
-            // public static string Working_In_Background = "continuum knot working in background";
-
+            public static string Busy = "continuum knot busy";
+            public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
+            public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
+            public static string Handwriting = "continuum knot handwriting";
+            public static string Help_Select = "continuum knot help select";
+            public static string Horizontal_Resize = "continuum knot horizontal resize";
+            public static string Link_Select = "continuum knot link select";
+            public static string Move = "continuum knot move";
+            public static string Normal_Select = "continuum knot normal select";
+            public static string Precision_Select = "continuum knot precision select";
+            public static string Text_Select = "continuum knot text select";
+            public static string Unavailable = "continuum knot unavailable";
+            public static string Vertical_Resize = "continuum knot vertical resize";
+            public static string Working_In_Background = "continuum knot working in background";
         }
 
         public class Purple
         : GlobalCursorDB
         {
             public static string Alternate_Select = "continuum knot alternate select";
-            // public static string Busy = "continuum knot busy";
-            // public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
-            // public static string Handwriting = "continuum knot handwriting";
-            // public static string Help_Select = "continuum knot help select";
-            // public static string Horizontal_Resize = "continuum knot horizontal resize";
-            // public static string Link_Select = "continuum knot link select";
-            // public static string Move = "continuum knot move";
-            // public static string Normal_Select = "continuum knot normal select";
-            // public static string Precision_Select = "continuum knot precision select";
-            // public static string Text_Select = "continuum knot text select";
-            // public static string Unavailable = "continuum knot unavailable";
-            // public static string Vertical_Resize = "continuum knot vertical resize";
-            // public static string Working_In_Background = "continuum knot working in background";
-
+            public static string Busy = "continuum knot busy";
+            public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
+            public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
+            public static string Handwriting = "continuum knot handwriting";
+            public static string Help_Select = "continuum knot help select";
+            public static string Horizontal_Resize = "continuum knot horizontal resize";
+            public static string Link_Select = "continuum knot link select";
+            public static string Move = "continuum knot move";
+            public static string Normal_Select = "continuum knot normal select";
+            public static string Precision_Select = "continuum knot precision select";
+            public static string Text_Select = "continuum knot text select";
+            public static string Unavailable = "continuum knot unavailable";
+            public static string Vertical_Resize = "continuum knot vertical resize";
+            public static string Working_In_Background = "continuum knot working in background";
         }
 
         public class Red
         : GlobalCursorDB
         {
             public static string Alternate_Select = "continuum knot alternate select";
-            // public static string Busy = "continuum knot busy";
-            // public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
-            // public static string Handwriting = "continuum knot handwriting";
-            // public static string Help_Select = "continuum knot help select";
-            // public static string Horizontal_Resize = "continuum knot horizontal resize";
-            // public static string Link_Select = "continuum knot link select";
-            // public static string Move = "continuum knot move";
-            // public static string Normal_Select = "continuum knot normal select";
-            // public static string Precision_Select = "continuum knot precision select";
-            // public static string Text_Select = "continuum knot text select";
-            // public static string Unavailable = "continuum knot unavailable";
-            // public static string Vertical_Resize = "continuum knot vertical resize";
-            // public static string Working_In_Background = "continuum knot working in background";
-
+            public static string Busy = "continuum knot busy";
+            public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
+            public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
+            public static string Handwriting = "continuum knot handwriting";
+            public static string Help_Select = "continuum knot help select";
+            public static string Horizontal_Resize = "continuum knot horizontal resize";
+            public static string Link_Select = "continuum knot link select";
+            public static string Move = "continuum knot move";
+            public static string Normal_Select = "continuum knot normal select";
+            public static string Precision_Select = "continuum knot precision select";
+            public static string Text_Select = "continuum knot text select";
+            public static string Unavailable = "continuum knot unavailable";
+            public static string Vertical_Resize = "continuum knot vertical resize";
+            public static string Working_In_Background = "continuum knot working in background";
         }
 
-        /*public class White
-        : GlobalCursorDB {
-public static string Alternate_Select = "continuum knot alternate select";
-            // public static string Busy = "continuum knot busy";
-            // public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
-            // public static string Handwriting = "continuum knot handwriting";
-            // public static string Help_Select = "continuum knot help select";
-            // public static string Horizontal_Resize = "continuum knot horizontal resize";
-            // public static string Link_Select = "continuum knot link select";
-            // public static string Move = "continuum knot move";
-            // public static string Normal_Select = "continuum knot normal select";
-            // public static string Precision_Select = "continuum knot precision select";
-            // public static string Text_Select = "continuum knot text select";
-            // public static string Unavailable = "continuum knot unavailable";
-            // public static string Vertical_Resize = "continuum knot vertical resize";
-            // public static string Working_In_Background = "continuum knot working in background";
-
-        }*/
+        public class White
+        : GlobalCursorDB
+        {
+            public static string Alternate_Select = "continuum knot alternate select";
+            public static string Busy = "continuum knot busy";
+            public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
+            public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
+            public static string Handwriting = "continuum knot handwriting";
+            public static string Help_Select = "continuum knot help select";
+            public static string Horizontal_Resize = "continuum knot horizontal resize";
+            public static string Link_Select = "continuum knot link select";
+            public static string Move = "continuum knot move";
+            public static string Normal_Select = "continuum knot normal select";
+            public static string Precision_Select = "continuum knot precision select";
+            public static string Text_Select = "continuum knot text select";
+            public static string Unavailable = "continuum knot unavailable";
+            public static string Vertical_Resize = "continuum knot vertical resize";
+            public static string Working_In_Background = "continuum knot working in background";
+        }
 
         public class Yellow
         : GlobalCursorDB
         {
             public static string Alternate_Select = "continuum knot alternate select";
-            // public static string Busy = "continuum knot busy";
-            // public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
-            // public static string Handwriting = "continuum knot handwriting";
-            // public static string Help_Select = "continuum knot help select";
-            // public static string Horizontal_Resize = "continuum knot horizontal resize";
-            // public static string Link_Select = "continuum knot link select";
-            // public static string Move = "continuum knot move";
-            // public static string Normal_Select = "continuum knot normal select";
-            // public static string Precision_Select = "continuum knot precision select";
-            // public static string Text_Select = "continuum knot text select";
-            // public static string Unavailable = "continuum knot unavailable";
-            // public static string Vertical_Resize = "continuum knot vertical resize";
-            // public static string Working_In_Background = "continuum knot working in background";
-
+            public static string Busy = "continuum knot busy";
+            public static string Diagonal_Resize_1 = "continuum knot diagonal resize 1";
+            public static string Diagonal_Resize_2 = "continuum knot diagonal resize 2";
+            public static string Handwriting = "continuum knot handwriting";
+            public static string Help_Select = "continuum knot help select";
+            public static string Horizontal_Resize = "continuum knot horizontal resize";
+            public static string Link_Select = "continuum knot link select";
+            public static string Move = "continuum knot move";
+            public static string Normal_Select = "continuum knot normal select";
+            public static string Precision_Select = "continuum knot precision select";
+            public static string Text_Select = "continuum knot text select";
+            public static string Unavailable = "continuum knot unavailable";
+            public static string Vertical_Resize = "continuum knot vertical resize";
+            public static string Working_In_Background = "continuum knot working in background";
         }
-
-
     }
 
     public class Darkling_Cursor
@@ -358,7 +318,6 @@ public static string Alternate_Select = "continuum knot alternate select";
         public static string Unavailable = "unavailable";
         public static string V_Res = "v_res";
         public static string Working = "working";
-
     }
 
     public class Denial
@@ -377,25 +336,24 @@ public static string Alternate_Select = "continuum knot alternate select";
         public static string Text = "Text";
         public static string Unavailable = "Unavailable";
         public static string Verticalresize = "VerticalResize";
-        /*public class Blue
-        : GlobalCursorDB {
-public static string Alternate = "Alternate";
-            // public static string Diagonalresize1 = "DiagonalResize1";
-            // public static string Diagonalresize2 = "DiagonalResize2";
-            // public static string Handwrite = "Handwrite";
-            // public static string Help = "Help";
-            // public static string Horizontalresize = "HorizontalResize";
-            // public static string Link = "Link";
-            // public static string Move = "Move";
-            // public static string Normal = "Normal";
-            // public static string Precision = "Precision";
-            // public static string Text = "Text";
-            // public static string Unavailable = "Unavailable";
-            // public static string Verticalresize = "VerticalResize";
 
-        }*/
-
-
+        public class Blue
+        : GlobalCursorDB
+        {
+            public static string Alternate = "Alternate";
+            public static string Diagonalresize1 = "DiagonalResize1";
+            public static string Diagonalresize2 = "DiagonalResize2";
+            public static string Handwrite = "Handwrite";
+            public static string Help = "Help";
+            public static string Horizontalresize = "HorizontalResize";
+            public static string Link = "Link";
+            public static string Move = "Move";
+            public static string Normal = "Normal";
+            public static string Precision = "Precision";
+            public static string Text = "Text";
+            public static string Unavailable = "Unavailable";
+            public static string Verticalresize = "VerticalResize";
+        }
     }
 
     public class Edge11_Aya
@@ -454,7 +412,6 @@ public static string Alternate = "Alternate";
         public static string Saori_Ns = "saori-ns";
         public static string Saori_Nwse = "saori-nwse";
         public static string Saori_Text = "saori-text";
-
     }
 
     public class Edge11
@@ -513,7 +470,6 @@ public static string Alternate = "Alternate";
         public static string Seiko_Ns = "seiko-ns";
         public static string Seiko_Nwse = "seiko-nwse";
         public static string Seiko_Text = "seiko-text";
-
     }
 
     public class Edge
@@ -540,7 +496,6 @@ public static string Alternate = "Alternate";
         public static string Nwse_Yuki = "nwse-yuki";
         public static string Pen = "pen";
         public static string Text = "text";
-
     }
 
     public class Edge_Crystal
@@ -561,7 +516,6 @@ public static string Alternate = "Alternate";
         public static string Nwse = "nwse";
         public static string Pen = "pen";
         public static string Text = "text";
-
     }
 
     public class Extenza_Crystal_Cursors
@@ -580,7 +534,6 @@ public static string Alternate = "Alternate";
         public static string Nwse = "nwse";
         public static string Pen = "pen";
         public static string Text = "text";
-
     }
 
     public class ExtenzaBlue
@@ -598,7 +551,6 @@ public static string Alternate = "Alternate";
         public static string Nwse_Bl = "nwse-bl";
         public static string Pen = "pen";
         public static string Text_Bl = "text-bl";
-
     }
 
     public class ExtenzaOrange
@@ -616,7 +568,6 @@ public static string Alternate = "Alternate";
         public static string Nwse_Or = "nwse-or";
         public static string Pen = "pen";
         public static string Text_Or = "text-or";
-
     }
 
     public class Extenza_Pro
@@ -733,7 +684,6 @@ public static string Alternate = "Alternate";
         public static string Text_7Y = "text-7y";
         public static string Text_8B = "text-8b";
         public static string Text_9W = "text-9w";
-
     }
 
     public class Forma_NovaAlternatives
@@ -743,14 +693,14 @@ public static string Alternate = "Alternate";
         public static string Alt_Link2 = "alt_link2";
         public static string Alt_Link3 = "alt_link3";
         public static string Alt_Working_Noanim = "alt_working_noanim";
-
     }
 
     public class Frequence
     {
-        /*public class Black
-        : GlobalCursorDB {
-public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
+        public class Black
+        : GlobalCursorDB
+        {
+            public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
             public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
             public static string Shadow_Handwriting_Short = "Frequence (Shadow) Handwriting (Short)";
             public static string Shadow_Handwriting = "Frequence (Shadow) Handwriting";
@@ -769,75 +719,71 @@ public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
             public static string Text = "Frequence Text";
             public static string Unavailable = "Frequence Unavailable";
             public static string Vertical = "Frequence Vertical";
+        }
 
-        }*/
-
-        /*public class Blue
-        : GlobalCursorDB {
-public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
-            // public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
-            // public static string Shadow_Handwriting_Short = "Frequence (Shadow) Handwriting (Short)";
-            // public static string Alternate = "Frequence Alternate";
-            // public static string Help = "Frequence Help";
-            // public static string Horizontal = "Frequence Horizontal";
-            // public static string Link = "Frequence Link";
-            // public static string Move = "Frequence Move";
-            // public static string Normal = "Frequence Normal";
-            // public static string Precision = "Frequence Precision";
-            // public static string Text_Short = "Frequence Text (Short)";
+        public class Blue
+        : GlobalCursorDB
+        {
+            public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
+            public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
+            public static string Shadow_Handwriting_Short = "Frequence (Shadow) Handwriting (Short)";
+            public static string Alternate = "Frequence Alternate";
+            public static string Help = "Frequence Help";
+            public static string Horizontal = "Frequence Horizontal";
+            public static string Link = "Frequence Link";
+            public static string Move = "Frequence Move";
+            public static string Normal = "Frequence Normal";
+            public static string Precision = "Frequence Precision";
+            public static string Text_Short = "Frequence Text (Short)";
             public static string Unavailable_1 = "Unavailable_1";
-            // public static string Vertical = "Frequence Vertical";
-
-        }*/
+            public static string Vertical = "Frequence Vertical";
+        }
 
         public class Default
         : GlobalCursorDB
         {
             public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
-            // public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
-            // public static string Shadow_Handwriting_Short = "Frequence (Shadow) Handwriting (Short)";
-            // public static string Shadow_Handwriting = "Frequence (Shadow) Handwriting";
-            // public static string Alternate = "Frequence Alternate";
-            // public static string Diagonal_1 = "Frequence Diagonal 1";
-            // public static string Diagonal_2 = "Frequence Diagonal 2";
-            // public static string Handwriting_Short = "Frequence Handwriting (Short)";
-            // public static string Handwriting = "Frequence Handwriting";
-            // public static string Help = "Frequence Help";
-            // public static string Horizontal = "Frequence Horizontal";
-            // public static string Link = "Frequence Link";
-            // public static string Move = "Frequence Move";
-            // public static string Normal = "Frequence Normal";
-            // public static string Precision = "Frequence Precision";
-            // public static string Text_Short = "Frequence Text (Short)";
-            // public static string Text = "Frequence Text";
-            // public static string Unavailable_1 = "Unavailable_1";
+            public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
+            public static string Shadow_Handwriting_Short = "Frequence (Shadow) Handwriting (Short)";
+            public static string Shadow_Handwriting = "Frequence (Shadow) Handwriting";
+            public static string Alternate = "Frequence Alternate";
+            public static string Diagonal_1 = "Frequence Diagonal 1";
+            public static string Diagonal_2 = "Frequence Diagonal 2";
+            public static string Handwriting_Short = "Frequence Handwriting (Short)";
+            public static string Handwriting = "Frequence Handwriting";
+            public static string Help = "Frequence Help";
+            public static string Horizontal = "Frequence Horizontal";
+            public static string Link = "Frequence Link";
+            public static string Move = "Frequence Move";
+            public static string Normal = "Frequence Normal";
+            public static string Precision = "Frequence Precision";
+            public static string Text_Short = "Frequence Text (Short)";
+            public static string Text = "Frequence Text";
+            public static string Unavailable_1 = "Unavailable_1";
             public static string Unavailable_2 = "Unavailable_2";
-            // public static string Vertical = "Frequence Vertical";
-
+            public static string Vertical = "Frequence Vertical";
         }
 
-        /*public class Green
-        : GlobalCursorDB {
-public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
-            // public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
-            // public static string Shadow_Handwriting_Short = "Frequence (Shadow) Handwriting (Short)";
-            // public static string Shadow_Handwriting = "Frequence (Shadow) Handwriting";
-            // public static string Alternate = "Frequence Alternate";
-            // public static string Diagonal_1 = "Frequence Diagonal 1";
-            // public static string Diagonal_2 = "Frequence Diagonal 2";
-            // public static string Handwriting_Short = "Frequence Handwriting (Short)";
-            // public static string Handwriting = "Frequence Handwriting";
-            // public static string Help = "Frequence Help";
-            // public static string Horizontal = "Frequence Horizontal";
-            // public static string Link = "Frequence Link";
-            // public static string Move = "Frequence Move";
-            // public static string Normal = "Frequence Normal";
-            // public static string Unavailable = "Frequence Unavailable";
-            // public static string Vertical = "Frequence Vertical";
-
-        }*/
-
-
+        public class Green
+        : GlobalCursorDB
+        {
+            public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
+            public static string Shadow_Diagonal_2 = "Frequence (Shadow) Diagonal 2";
+            public static string Shadow_Handwriting_Short = "Frequence (Shadow) Handwriting (Short)";
+            public static string Shadow_Handwriting = "Frequence (Shadow) Handwriting";
+            public static string Alternate = "Frequence Alternate";
+            public static string Diagonal_1 = "Frequence Diagonal 1";
+            public static string Diagonal_2 = "Frequence Diagonal 2";
+            public static string Handwriting_Short = "Frequence Handwriting (Short)";
+            public static string Handwriting = "Frequence Handwriting";
+            public static string Help = "Frequence Help";
+            public static string Horizontal = "Frequence Horizontal";
+            public static string Link = "Frequence Link";
+            public static string Move = "Frequence Move";
+            public static string Normal = "Frequence Normal";
+            public static string Unavailable = "Frequence Unavailable";
+            public static string Vertical = "Frequence Vertical";
+        }
     }
 
     public class Chrome_OS
@@ -863,7 +809,6 @@ public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string Out = "out";
         public static string Text = "text";
         public static string Xterm_Horiz = "xterm_horiz";
-
     }
 
     public class Grey_Tango_Cursor
@@ -884,49 +829,44 @@ public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
             public static string Moving = "14_moving";
             public static string Special_Allocation = "15_special allocation";
             public static string Reference_Choice = "16_reference choice";
-
         }
-
-
     }
 
     public class Grey_Tango_Little
     : GlobalCursorDB
     {
         public static string UndefinedFieldName_1 = "01";
-        // public static string UndefinedFieldName_2 = "02";
-        // public static string UndefinedFieldName_5 = "05";
-        // public static string UndefinedFieldName_6 = "06";
-        // public static string UndefinedFieldName_7 = "07";
-        // public static string UndefinedFieldName_8 = "08";
-        // public static string UndefinedFieldName_9 = "09";
-        // public static string UndefinedFieldName_10 = "10";
-        // public static string UndefinedFieldName_11 = "11";
-        // public static string UndefinedFieldName_12 = "12";
-        // public static string UndefinedFieldName_13 = "13";
-        // public static string UndefinedFieldName_14 = "14";
-        // public static string UndefinedFieldName_15 = "15";
-
+        public static string UndefinedFieldName_2 = "02";
+        public static string UndefinedFieldName_5 = "05";
+        public static string UndefinedFieldName_6 = "06";
+        public static string UndefinedFieldName_7 = "07";
+        public static string UndefinedFieldName_8 = "08";
+        public static string UndefinedFieldName_9 = "09";
+        public static string UndefinedFieldName_10 = "10";
+        public static string UndefinedFieldName_11 = "11";
+        public static string UndefinedFieldName_12 = "12";
+        public static string UndefinedFieldName_13 = "13";
+        public static string UndefinedFieldName_14 = "14";
+        public static string UndefinedFieldName_15 = "15";
     }
 
     public class Grey_Tango_White
     : GlobalCursorDB
     {
         public static string UndefinedFieldName_1 = "01";
-        // public static string UndefinedFieldName_2 = "02";
-        // public static string UndefinedFieldName_5 = "05";
-        // public static string UndefinedFieldName_6 = "06";
-        // public static string UndefinedFieldName_7 = "07";
-        // public static string UndefinedFieldName_8 = "08";
-        // public static string UndefinedFieldName_9 = "09";
-        // public static string UndefinedFieldName_10 = "10";
-        // public static string UndefinedFieldName_11 = "11";
-        // public static string UndefinedFieldName_12 = "12";
-        // public static string UndefinedFieldName_13 = "13";
-        // public static string UndefinedFieldName_14 = "14";
-        // public static string UndefinedFieldName_15 = "15";
-        // public static string UndefinedFieldName_16 = "16";
-
+        public static string UndefinedFieldName_2 = "02";
+        public static string UndefinedFieldName_5 = "05";
+        public static string UndefinedFieldName_6 = "06";
+        public static string UndefinedFieldName_7 = "07";
+        public static string UndefinedFieldName_8 = "08";
+        public static string UndefinedFieldName_9 = "09";
+        public static string UndefinedFieldName_10 = "10";
+        public static string UndefinedFieldName_11 = "11";
+        public static string UndefinedFieldName_12 = "12";
+        public static string UndefinedFieldName_13 = "13";
+        public static string UndefinedFieldName_14 = "14";
+        public static string UndefinedFieldName_15 = "15";
+        public static string UndefinedFieldName_16 = "16";
     }
 
     public class Incarnerry_Mark
@@ -947,7 +887,6 @@ public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string Unavailable = "incarnerry mark unavailable";
         public static string Vertical_Resize = "incarnerry mark vertical resize";
         public static string Working_In_Background = "incarnerry mark working in background";
-
     }
 
     public class Integra
@@ -966,7 +905,6 @@ public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string Nwse = "nwse";
         public static string Pen = "pen";
         public static string Text = "text";
-
     }
 
     public class Kcursors
@@ -986,7 +924,6 @@ public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string K_Unavailable = "k_unavailable";
         public static string K_Vertical_Resize = "k_vertical_resize";
         public static string K_Working_In_Background = "k_working_in_background";
-
     }
 
     public class Minimal_Taste_Cursors
@@ -1005,7 +942,6 @@ public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string Text_Select = "Text Select";
         public static string Unavailable = "Unavailable";
         public static string Vertical_Resize = "Vertical Resize";
-
     }
 
     public class Ml_Blau
@@ -1036,14 +972,14 @@ public static string Shadow_Diagonal_1 = "Frequence (Shadow) Diagonal 1";
         public static string Ml_Blau_Text = "ml_blau_text";
         public static string Ml_Blau_Unavailable = "ml_blau_unavailable";
         public static string Ml_Blau_Vertical = "ml_blau_vertical";
-
     }
 
     public class Ml_Blau_3
     {
-        /*public class Ml_Blau
-        : GlobalCursorDB {
-public static string Alternate_Hires = "ml_blau_alternate_hires";
+        public class Ml_Blau
+        : GlobalCursorDB
+        {
+            public static string Alternate_Hires = "ml_blau_alternate_hires";
             public static string Diagonal_Left_Hires = "ml_blau_diagonal_left_hires";
             public static string Diagonal_Right_Hires = "ml_blau_diagonal_right_hires";
             public static string Horizontal_Hires = "ml_blau_horizontal_hires";
@@ -1056,41 +992,8 @@ public static string Alternate_Hires = "ml_blau_alternate_hires";
             public static string Text_Hires = "ml_blau_text_hires";
             public static string Unavailable_Hires = "ml_blau_unavailable_hires";
             public static string Vertical_Hires = "ml_blau_vertical_hires";
-
-        }*/
-
-
+        }
     }
-
-    /*public class Ml_Blau
-    : GlobalCursorDB {
-public static string Alternate_Hires = "ml_blau_alternate_hires";
-        // public static string Diagonal_Left_Hires = "ml_blau_diagonal_left_hires";
-        // public static string Diagonal_Right_Hires = "ml_blau_diagonal_right_hires";
-        // public static string Horizontal_Hires = "ml_blau_horizontal_hires";
-        // public static string Link_Hires = "ml_blau_link_hires";
-        // public static string Move_Hires = "ml_blau_move_hires";
-        // public static string Normal_Hires = "ml_blau_normal_hires";
-        // public static string Pen_Hires = "ml_blau_pen_hires";
-        // public static string Precision2_Hires = "ml_blau_precision2_hires";
-        // public static string Precision_Hires = "ml_blau_precision_hires";
-        // public static string Text_Hires = "ml_blau_text_hires";
-        // public static string Unavailable_Hires = "ml_blau_unavailable_hires";
-        // public static string Vertical_Hires = "ml_blau_vertical_hires";
-        // public static string Ml_Blau_Alternate = "ml_blau_alternate";
-        // public static string Ml_Blau_Diagonal_Left = "ml_blau_diagonal_left";
-        // public static string Ml_Blau_Diagonal_Right = "ml_blau_diagonal_right";
-        // public static string Ml_Blau_Horizontal = "ml_blau_horizontal";
-        // public static string Ml_Blau_Link = "ml_blau_link";
-        // public static string Ml_Blau_Move = "ml_blau_move";
-        // public static string Ml_Blau_Normal = "ml_blau_normal";
-        // public static string Ml_Blau_Pen = "ml_blau_pen";
-        // public static string Ml_Blau_Precision = "ml_blau_precision";
-        // public static string Ml_Blau_Text = "ml_blau_text";
-        // public static string Ml_Blau_Unavailable = "ml_blau_unavailable";
-        // public static string Ml_Blau_Vertical = "ml_blau_vertical";
-
-    }*/
 
     public class Moonshine_V2_3
     : GlobalCursorDB
@@ -1115,7 +1018,6 @@ public static string Alternate_Hires = "ml_blau_alternate_hires";
         public static string Unavailable = "MoonShine_v2_3_Unavailable";
         public static string Unavailable_Ole32 = "MoonShine_v2_3_Unavailable_Ole32";
         public static string Vert = "MoonShine_v2_3_Vert";
-
     }
 
     public class Moonshine_V2
@@ -1148,7 +1050,6 @@ public static string Alternate_Hires = "ml_blau_alternate_hires";
         public static string Text = "MoonShine_v2_Text";
         public static string Unavailable_Ole32 = "MoonShine_v2_Unavailable_Ole32";
         public static string Vert = "MoonShine_v2_Vert";
-
     }
 
     public class Moonshine_V3
@@ -1174,14 +1075,14 @@ public static string Alternate_Hires = "ml_blau_alternate_hires";
         public static string Text = "MoonShine_v3_Text";
         public static string Unavailable_Ole32 = "MoonShine_v3_Unavailable_Ole32";
         public static string Vert = "MoonShine_v3_Vert";
-
     }
 
     public class Moonshine_V1
     {
-        /*public class Blue
-        : GlobalCursorDB {
-public static string Moonshine_Alternate = "MoonShine_Alternate";
+        public class Blue
+        : GlobalCursorDB
+        {
+            public static string Moonshine_Alternate = "MoonShine_Alternate";
             public static string Moonshine_CD_Bonus = "MoonShine_CD_Bonus";
             public static string Moonshine_Copy_Ole32 = "MoonShine_Copy_Ole32";
             public static string Moonshine_Copy_P_Ole32 = "MoonShine_Copy_p_Ole32";
@@ -1200,10 +1101,7 @@ public static string Moonshine_Alternate = "MoonShine_Alternate";
             public static string Moonshine_Text = "MoonShine_Text";
             public static string Moonshine_Unavailable_Ole32 = "MoonShine_Unavailable_Ole32";
             public static string Moonshine_Vert = "MoonShine_Vert";
-
-        }*/
-
-
+        }
     }
 
     public class Neutral
@@ -1222,14 +1120,14 @@ public static string Moonshine_Alternate = "MoonShine_Alternate";
         public static string Text_Select = "Text Select";
         public static string Unavailable = "Unavailable";
         public static string Vertical_Resize = "Vertical Resize";
-
     }
 
     public class Oxygen_Cursors
     {
-        /*public class Black
-        : GlobalCursorDB {
-public static string Cross = "cross";
+        public class Black
+        : GlobalCursorDB
+        {
+            public static string Cross = "cross";
             public static string Forbidden = "forbidden";
             public static string Help = "help";
             public static string Left_Ptr = "left_ptr";
@@ -1242,688 +1140,655 @@ public static string Cross = "cross";
             public static string Size_Ver = "size_ver";
             public static string Text = "Text";
             public static string Up_Arrow = "up_arrow";
+        }
 
-        }*/
-
-        /*public class Blue
-        : GlobalCursorDB {
-public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
-        }*/
+        public class Blue
+        : GlobalCursorDB
+        {
+            public static string Cross = "cross";
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
+        }
 
         public class Bluecurve
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Brown
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Cherry
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Chrome
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Desert
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Emerald
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
-        /*public class Green
-        : GlobalCursorDB {
-public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
-        }*/
+        public class Green
+        : GlobalCursorDB
+        {
+            public static string Cross = "cross";
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
+        }
 
         public class Grey
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Honeycomb
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Hot_Orange
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Lilac
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Midnight_Meadow
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Navy
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Norway
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Obsidian
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Obsidian_Hc
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Olympus
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Olympus_Inv
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Orchid
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Oxygen
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Peach
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
-        /*public class Purple
-        : GlobalCursorDB {
-public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
+        public class Purple
+        : GlobalCursorDB
+        {
+            public static string Cross = "cross";
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
+        }
 
-        }*/
-
-        /*public class Red
-        : GlobalCursorDB {
-public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
-        }*/
+        public class Red
+        : GlobalCursorDB
+        {
+            public static string Cross = "cross";
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
+        }
 
         public class Red_Argentina
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Sea_Blue
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Steel
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Terra
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Terra_Green
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Violet
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Viorange
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
-        /*public class White
-        : GlobalCursorDB {
-public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
-        }*/
+        public class White
+        : GlobalCursorDB
+        {
+            public static string Cross = "cross";
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
+        }
 
         public class Whitewater
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
         public class Wonton
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
 
-        /*public class Yellow
-        : GlobalCursorDB {
-public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
-        }*/
+        public class Yellow
+        : GlobalCursorDB
+        {
+            public static string Cross = "cross";
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
+        }
 
         public class Zion
         : GlobalCursorDB
         {
             public static string Cross = "cross";
-            // public static string Forbidden = "forbidden";
-            // public static string Help = "help";
-            // public static string Left_Ptr = "left_ptr";
-            // public static string Pencil = "pencil";
-            // public static string Pointing_Hand = "pointing_hand";
-            // public static string Size_All = "size_all";
-            // public static string Size_Bdiag = "size_bdiag";
-            // public static string Size_Fdiag = "size_fdiag";
-            // public static string Size_Hor = "size_hor";
-            // public static string Size_Ver = "size_ver";
-            // public static string Text = "Text";
-            // public static string Up_Arrow = "up_arrow";
-
+            public static string Forbidden = "forbidden";
+            public static string Help = "help";
+            public static string Left_Ptr = "left_ptr";
+            public static string Pencil = "pencil";
+            public static string Pointing_Hand = "pointing_hand";
+            public static string Size_All = "size_all";
+            public static string Size_Bdiag = "size_bdiag";
+            public static string Size_Fdiag = "size_fdiag";
+            public static string Size_Hor = "size_hor";
+            public static string Size_Ver = "size_ver";
+            public static string Text = "Text";
+            public static string Up_Arrow = "up_arrow";
         }
-
-
     }
 
     public class Polar
@@ -1942,14 +1807,14 @@ public static string Cross = "cross";
         public static string Rzvertical = "RZVertical";
         public static string Text = "Text";
         public static string Unavailable = "Unavailable";
-
     }
 
     public class Radix_Phantasma
     {
-        /*public class Blue
-        : GlobalCursorDB {
-public static string Alternate_Select = "radix phantasma alternate select";
+        public class Blue
+        : GlobalCursorDB
+        {
+            public static string Alternate_Select = "radix phantasma alternate select";
             public static string Busy = "radix phantasma busy";
             public static string Diagonal_Resize_1 = "radix phantasma diagonal resize 1";
             public static string Diagonal_Resize_2 = "radix phantasma diagonal resize 2";
@@ -1964,57 +1829,55 @@ public static string Alternate_Select = "radix phantasma alternate select";
             public static string Unavailable = "radix phantasma unavailable";
             public static string Vertical_Resize = "radix phantasma vertical resize";
             public static string Working_In_Background = "radix phantasma working in background";
+        }
 
-        }*/
+        public class Green
+        : GlobalCursorDB
+        {
+            public static string Alternate_Select = "radix phantasma alternate select";
+            public static string Busy = "radix phantasma busy";
+            public static string Diagonal_Resize_1 = "radix phantasma diagonal resize 1";
+            public static string Diagonal_Resize_2 = "radix phantasma diagonal resize 2";
+            public static string Handwriting = "radix phantasma handwriting";
+            public static string Help_Select = "radix phantasma help select";
+            public static string Horizontal_Resize = "radix phantasma horizontal resize";
+            public static string Link_Select = "radix phantasma link select";
+            public static string Move = "radix phantasma move";
+            public static string Normal_Select = "radix phantasma normal select";
+            public static string Precision_Select = "radix phantasma precision select";
+            public static string Text_Select = "radix phantasma text select";
+            public static string Unavailable = "radix phantasma unavailable";
+            public static string Vertical_Resize = "radix phantasma vertical resize";
+            public static string Working_In_Background = "radix phantasma working in background";
+        }
 
-        /*public class Green
-        : GlobalCursorDB {
-public static string Alternate_Select = "radix phantasma alternate select";
-            // public static string Busy = "radix phantasma busy";
-            // public static string Diagonal_Resize_1 = "radix phantasma diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "radix phantasma diagonal resize 2";
-            // public static string Handwriting = "radix phantasma handwriting";
-            // public static string Help_Select = "radix phantasma help select";
-            // public static string Horizontal_Resize = "radix phantasma horizontal resize";
-            // public static string Link_Select = "radix phantasma link select";
-            // public static string Move = "radix phantasma move";
-            // public static string Normal_Select = "radix phantasma normal select";
-            // public static string Precision_Select = "radix phantasma precision select";
-            // public static string Text_Select = "radix phantasma text select";
-            // public static string Unavailable = "radix phantasma unavailable";
-            // public static string Vertical_Resize = "radix phantasma vertical resize";
-            // public static string Working_In_Background = "radix phantasma working in background";
-
-        }*/
-
-        /*public class Red
-        : GlobalCursorDB {
-public static string Alternate_Select = "radix phantasma alternate select";
-            // public static string Busy = "radix phantasma busy";
-            // public static string Diagonal_Resize_1 = "radix phantasma diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "radix phantasma diagonal resize 2";
-            // public static string Handwriting = "radix phantasma handwriting";
-            // public static string Help_Select = "radix phantasma help select";
-            // public static string Horizontal_Resize = "radix phantasma horizontal resize";
-            // public static string Link_Select = "radix phantasma link select";
-            // public static string Move = "radix phantasma move";
-            // public static string Normal_Select = "radix phantasma normal select";
-            // public static string Precision_Select = "radix phantasma precision select";
-            // public static string Text_Select = "radix phantasma text select";
-            // public static string Unavailable = "radix phantasma unavailable";
-            // public static string Vertical_Resize = "radix phantasma vertical resize";
-            // public static string Working_In_Background = "radix phantasma working in background";
-
-        }*/
-
-
+        public class Red
+        : GlobalCursorDB
+        {
+            public static string Alternate_Select = "radix phantasma alternate select";
+            public static string Busy = "radix phantasma busy";
+            public static string Diagonal_Resize_1 = "radix phantasma diagonal resize 1";
+            public static string Diagonal_Resize_2 = "radix phantasma diagonal resize 2";
+            public static string Handwriting = "radix phantasma handwriting";
+            public static string Help_Select = "radix phantasma help select";
+            public static string Horizontal_Resize = "radix phantasma horizontal resize";
+            public static string Link_Select = "radix phantasma link select";
+            public static string Move = "radix phantasma move";
+            public static string Normal_Select = "radix phantasma normal select";
+            public static string Precision_Select = "radix phantasma precision select";
+            public static string Text_Select = "radix phantasma text select";
+            public static string Unavailable = "radix phantasma unavailable";
+            public static string Vertical_Resize = "radix phantasma vertical resize";
+            public static string Working_In_Background = "radix phantasma working in background";
+        }
     }
 
     public class Sophicon_Redux
     {
-        /*public class Blue
-        : GlobalCursorDB {
-public static string Alternate_Select = "sophicon redux alternate select";
+        public class Blue
+        : GlobalCursorDB
+        {
+            public static string Alternate_Select = "sophicon redux alternate select";
             public static string Busy = "sophicon redux busy";
             public static string Diagonal_Resize_1 = "sophicon redux diagonal resize 1";
             public static string Diagonal_Resize_2 = "sophicon redux diagonal resize 2";
@@ -2029,60 +1892,58 @@ public static string Alternate_Select = "sophicon redux alternate select";
             public static string Unavailable = "sophicon redux unavailable";
             public static string Vertical_Resize = "sophicon redux vertical resize";
             public static string Working_In_Background = "sophicon redux working in background";
+        }
 
-        }*/
-
-        /*public class Red
-        : GlobalCursorDB {
-public static string Alternate_Select = "sophicon redux alternate select";
-            // public static string Busy = "sophicon redux busy";
-            // public static string Diagonal_Resize_1 = "sophicon redux diagonal resize 1";
-            // public static string Diagonal_Resize_2 = "sophicon redux diagonal resize 2";
-            // public static string Handwriting = "sophicon redux handwriting";
-            // public static string Help_Select = "sophicon redux help select";
-            // public static string Horizontal_Resize = "sophicon redux horizontal resize";
-            // public static string Link_Select = "sophicon redux link select";
-            // public static string Move = "sophicon redux move";
-            // public static string Normal_Select = "sophicon redux normal select";
-            // public static string Precision_Select = "sophicon redux precision select";
-            // public static string Text_Select = "sophicon redux text select";
-            // public static string Unavailable = "sophicon redux unavailable";
-            // public static string Vertical_Resize = "sophicon redux vertical resize";
-            // public static string Working_In_Background = "sophicon redux working in background";
-
-        }*/
-
-
+        public class Red
+        : GlobalCursorDB
+        {
+            public static string Alternate_Select = "sophicon redux alternate select";
+            public static string Busy = "sophicon redux busy";
+            public static string Diagonal_Resize_1 = "sophicon redux diagonal resize 1";
+            public static string Diagonal_Resize_2 = "sophicon redux diagonal resize 2";
+            public static string Handwriting = "sophicon redux handwriting";
+            public static string Help_Select = "sophicon redux help select";
+            public static string Horizontal_Resize = "sophicon redux horizontal resize";
+            public static string Link_Select = "sophicon redux link select";
+            public static string Move = "sophicon redux move";
+            public static string Normal_Select = "sophicon redux normal select";
+            public static string Precision_Select = "sophicon redux precision select";
+            public static string Text_Select = "sophicon redux text select";
+            public static string Unavailable = "sophicon redux unavailable";
+            public static string Vertical_Resize = "sophicon redux vertical resize";
+            public static string Working_In_Background = "sophicon redux working in background";
+        }
     }
 
     public class Streetlight_V2
     {
         public class Darkgray
         {
-            /*public class Alternate
-            : GlobalCursorDB {
-public static string Darkgray_Alternate_2 = "darkGray Alternate (2)";
+            public class Alternate
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Alternate_2 = "darkGray Alternate (2)";
                 public static string Darkgray_Alternate_1 = "darkGray Alternate 1)";
+            }
 
-            }*/
-
-            /*public class Diagonal_1
-            : GlobalCursorDB {
-public static string Darkgray_Diagonal_1_1 = "Darkgray_Diagonal_1_1";
+            public class Diagonal_1
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Diagonal_1_1 = "Darkgray_Diagonal_1_1";
                 public static string Darkgray_Diagonal_1_2 = "Darkgray_Diagonal_1_2";
+            }
 
-            }*/
-
-            /*public class Diagonal_2
-            : GlobalCursorDB {
-public static string Darkgray_Diagonal_2_1 = "Darkgray_Diagonal_2_1";
+            public class Diagonal_2
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Diagonal_2_1 = "Darkgray_Diagonal_2_1";
                 public static string Darkgray_Diagonal_2_2 = "Darkgray_Diagonal_2_2";
+            }
 
-            }*/
-
-            /*public class Handwriting
-            : GlobalCursorDB {
-public static string Darkgray_Shadow_Handwriting_1 = "Darkgray_Shadow_Handwriting_1";
+            public class Handwriting
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Shadow_Handwriting_1 = "Darkgray_Shadow_Handwriting_1";
                 public static string Darkgray_Shadow_Handwriting_2 = "Darkgray_Shadow_Handwriting_2";
                 public static string Darkgray_Shadow_Handwriting_3 = "Darkgray_Shadow_Handwriting_3";
                 public static string Darkgray_Shadow_Handwriting_4 = "Darkgray_Shadow_Handwriting_4";
@@ -2090,108 +1951,106 @@ public static string Darkgray_Shadow_Handwriting_1 = "Darkgray_Shadow_Handwritin
                 public static string Darkgray_Handwriting_2 = "Darkgray_Handwriting_2";
                 public static string Darkgray_Handwriting_3 = "Darkgray_Handwriting_3";
                 public static string Darkgray_Handwriting_4 = "Darkgray_Handwriting_4";
+            }
 
-            }*/
-
-            /*public class Help
-            : GlobalCursorDB {
-public static string Darkgray_Help_1 = "Darkgray_Help_1";
+            public class Help
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Help_1 = "Darkgray_Help_1";
                 public static string Darkgray_Help_2 = "Darkgray_Help_2";
                 public static string Darkgray_Help_3 = "Darkgray_Help_3";
                 public static string Darkgray_Help_4 = "Darkgray_Help_4";
+            }
 
-            }*/
-
-            /*public class Horizontal
-            : GlobalCursorDB {
-public static string Darkgray_Horizontal_1 = "Darkgray_Horizontal_1";
+            public class Horizontal
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Horizontal_1 = "Darkgray_Horizontal_1";
                 public static string Darkgray_Horizontal_2 = "Darkgray_Horizontal_2";
+            }
 
-            }*/
+            public class Link
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Link = "Darkgray_Link";
+            }
 
-            /*public class Link
-            : GlobalCursorDB {
-public static string Darkgray_Link = "Darkgray_Link";
-
-            }*/
-
-            /*public class Move
-            : GlobalCursorDB {
-public static string Darkgray_Move_1 = "Darkgray_Move_1";
+            public class Move
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Move_1 = "Darkgray_Move_1";
                 public static string Darkgray_Move_2 = "Darkgray_Move_2";
+            }
 
-            }*/
-
-            /*public class Normal
-            : GlobalCursorDB {
-public static string Darkgray_Normal_1 = "Darkgray_Normal_1";
+            public class Normal
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Normal_1 = "Darkgray_Normal_1";
                 public static string Darkgray_Normal_2 = "Darkgray_Normal_2";
+            }
 
-            }*/
-
-            /*public class Precision
-            : GlobalCursorDB {
-public static string Darkgray_Precision_1 = "Darkgray_Precision_1";
+            public class Precision
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Precision_1 = "Darkgray_Precision_1";
                 public static string Darkgray_Precision_2 = "Darkgray_Precision_2";
                 public static string Darkgray_Precision_3 = "Darkgray_Precision_3";
+            }
 
-            }*/
-
-            /*public class Text
-            : GlobalCursorDB {
-public static string Darkgray_Text_1_Short = "Darkgray_Text_1_Short";
+            public class Text
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Text_1_Short = "Darkgray_Text_1_Short";
                 public static string Darkgray_Text_1 = "Darkgray_Text_1";
                 public static string Darkgray_Text_2_Short = "Darkgray_Text_2_Short";
                 public static string Darkgray_Text_2 = "Darkgray_Text_2";
                 public static string Darkgray_Text_3_Short = "Darkgray_Text_3_Short";
                 public static string Darkgray_Text_3 = "Darkgray_Text_3";
+            }
 
-            }*/
-
-            /*public class Unavailable
-            : GlobalCursorDB {
-public static string Darkgray_Unavailable_1 = "Darkgray_Unavailable_1";
+            public class Unavailable
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Unavailable_1 = "Darkgray_Unavailable_1";
                 public static string Darkgray_Unavailable_2 = "Darkgray_Unavailable_2";
+            }
 
-            }*/
-
-            /*public class Vertical
-            : GlobalCursorDB {
-public static string Darkgray_Vertical_1 = "Darkgray_Vertical_1";
+            public class Vertical
+            : GlobalCursorDB
+            {
+                public static string Darkgray_Vertical_1 = "Darkgray_Vertical_1";
                 public static string Darkgray_Vertical_2 = "Darkgray_Vertical_2";
-
-            }*/
-
-
+            }
         }
 
-        /*public class Alternate
-        : GlobalCursorDB {
-public static string Alternate_1 = "Alternate_1";
+        public class Alternate
+        : GlobalCursorDB
+        {
+            public static string Alternate_1 = "Alternate_1";
             public static string Alternate_2 = "Alternate_2";
             public static string Alternate_3 = "Alternate_3";
+        }
 
-        }*/
-
-        /*public class Diagonal_1
-        : GlobalCursorDB {
-public static string Diagonal_1_1 = "Diagonal_1_1";
+        public class Diagonal_1
+        : GlobalCursorDB
+        {
+            public static string Diagonal_1_1 = "Diagonal_1_1";
             public static string Diagonal_1_2 = "Diagonal_1_2";
             public static string Diagonal_1_3 = "Diagonal_1_3";
+        }
 
-        }*/
-
-        /*public class Diagonal_2
-        : GlobalCursorDB {
-public static string Diagonal_2_1 = "Diagonal_2_1";
+        public class Diagonal_2
+        : GlobalCursorDB
+        {
+            public static string Diagonal_2_1 = "Diagonal_2_1";
             public static string Diagonal_2_2 = "Diagonal_2_2";
             public static string Diagonal_2_3 = "Diagonal_2_3";
+        }
 
-        }*/
-
-        /*public class Handwriting
-        : GlobalCursorDB {
-public static string Shadow_Handrwiting_1 = "Shadow_Handrwiting_1";
+        public class Handwriting
+        : GlobalCursorDB
+        {
+            public static string Shadow_Handrwiting_1 = "Shadow_Handrwiting_1";
             public static string Shadow_Handrwiting_2 = "Shadow_Handrwiting_2";
             public static string Shadow_Handrwiting_3 = "Shadow_Handrwiting_3";
             public static string Shadow_Handrwiting_4 = "Shadow_Handrwiting_4";
@@ -2213,12 +2072,12 @@ public static string Shadow_Handrwiting_1 = "Shadow_Handrwiting_1";
             public static string Handwriting_2 = "Handwriting_2";
             public static string Handwriting_3 = "Handwriting_3";
             public static string Handwriting_4 = "Handwriting_4";
+        }
 
-        }*/
-
-        /*public class Help
-        : GlobalCursorDB {
-public static string Help_1 = "Help_1";
+        public class Help
+        : GlobalCursorDB
+        {
+            public static string Help_1 = "Help_1";
             public static string Help_2 = "Help_2";
             public static string Help_3 = "Help_3";
             public static string Help_4 = "Help_4";
@@ -2227,54 +2086,54 @@ public static string Help_1 = "Help_1";
             public static string Help_7 = "Help_7";
             public static string Help_8 = "Help_8";
             public static string Help_9 = "Help_9";
+        }
 
-        }*/
-
-        /*public class Horizontal
-        : GlobalCursorDB {
-public static string Horizontal_1 = "Horizontal_1";
+        public class Horizontal
+        : GlobalCursorDB
+        {
+            public static string Horizontal_1 = "Horizontal_1";
             public static string Horizontal_2 = "Horizontal_2";
             public static string Horizontal_3 = "Horizontal_3";
+        }
 
-        }*/
-
-        /*public class Link
-        : GlobalCursorDB {
-public static string Link_1 = "Link_1";
+        public class Link
+        : GlobalCursorDB
+        {
+            public static string Link_1 = "Link_1";
             public static string Link_2 = "Link_2";
-            public static string Link = "Link";
+            public static string _Link = "Link";
+        }
 
-        }*/
-
-        /*public class Move
-        : GlobalCursorDB {
-public static string Move_1 = "Move_1";
+        public class Move
+        : GlobalCursorDB
+        {
+            public static string Move_1 = "Move_1";
             public static string Move_2 = "Move_2";
             public static string Move_3 = "Move_3";
+        }
 
-        }*/
-
-        /*public class Normal
-        : GlobalCursorDB {
-public static string Normal_1 = "Normal_1";
+        public class Normal
+        : GlobalCursorDB
+        {
+            public static string Normal_1 = "Normal_1";
             public static string Normal_2 = "Normal_2";
             public static string Normal_3 = "Normal_3";
+        }
 
-        }*/
-
-        /*public class Precision
-        : GlobalCursorDB {
-public static string Precision_1 = "Precision_1";
+        public class Precision
+        : GlobalCursorDB
+        {
+            public static string Precision_1 = "Precision_1";
             public static string Precision_2 = "Precision_2";
             public static string Precision_3 = "Precision_3";
             public static string Precision_4 = "Precision_4";
             public static string Precision_5 = "Precision_5";
+        }
 
-        }*/
-
-        /*public class Text
-        : GlobalCursorDB {
-public static string Text_1_Short = "Text_1_Short";
+        public class Text
+        : GlobalCursorDB
+        {
+            public static string Text_1_Short = "Text_1_Short";
             public static string Text_1 = "Text_1";
             public static string Text_2_Short = "Text_2_Short";
             public static string Text_2 = "Text_2";
@@ -2284,58 +2143,22 @@ public static string Text_1_Short = "Text_1_Short";
             public static string Text_4 = "Text_4";
             public static string Text_5_Short = "Text_5_Short";
             public static string Text_5 = "Text_5";
+        }
 
-        }*/
-
-        /*public class Unavailable
-        : GlobalCursorDB {
-public static string Unavailable_1 = "Unavailable_1";
+        public class Unavailable
+        : GlobalCursorDB
+        {
+            public static string Unavailable_1 = "Unavailable_1";
             public static string Unavailable_2 = "Unavailable_2";
+        }
 
-        }*/
-
-        /*public class Vertical
-        : GlobalCursorDB {
-public static string Vertical_1 = "Vertical_1";
+        public class Vertical
+        : GlobalCursorDB
+        {
+            public static string Vertical_1 = "Vertical_1";
             public static string Vertical_2 = "Vertical_2";
             public static string Vertical_3 = "Vertical_3";
-
-        }*/
-
-        /*public class Handwriting
-        : GlobalCursorDB {
-public static string Shadow_Handrwiting_1 = "Shadow_Handrwiting_1";
-            // public static string Shadow_Handrwiting_2 = "Shadow_Handrwiting_2";
-            // public static string Shadow_Handrwiting_3 = "Shadow_Handrwiting_3";
-            // public static string Shadow_Handrwiting_4 = "Shadow_Handrwiting_4";
-            // public static string Shadow_Handrwiting_5 = "Shadow_Handrwiting_5";
-            // public static string Shadow_Handrwiting_6 = "Shadow_Handrwiting_6";
-            // public static string Shadow_Handrwiting_7 = "Shadow_Handrwiting_7";
-            // public static string Handrwiting_1 = "Handrwiting_1";
-            // public static string Handrwiting_2 = "Handrwiting_2";
-            // public static string Handrwiting_3 = "Handrwiting_3";
-            // public static string Handrwiting_4 = "Handrwiting_4";
-            // public static string Handrwiting_5 = "Handrwiting_5";
-            // public static string Handrwiting_6 = "Handrwiting_6";
-            // public static string Handrwiting_7 = "Handrwiting_7";
-            // public static string Shadow_Handwriting_1 = "Shadow_Handwriting_1";
-            // public static string Shadow_Handwriting_2 = "Shadow_Handwriting_2";
-            // public static string Shadow_Handwriting_3 = "Shadow_Handwriting_3";
-            // public static string Shadow_Handwriting_4 = "Shadow_Handwriting_4";
-            // public static string Handwriting_1 = "Handwriting_1";
-            // public static string Handwriting_2 = "Handwriting_2";
-            // public static string Handwriting_3 = "Handwriting_3";
-            // public static string Handwriting_4 = "Handwriting_4";
-
-        }*/
-
-        /*public class Link
-        : GlobalCursorDB {
-public static string Link_1 = "Link_1";
-            // public static string Link_2 = "Link_2";
-            // public static string Link = "Link";
-
-        }*/
+        }
 
 
     }
@@ -2356,7 +2179,6 @@ public static string Link_1 = "Link_1";
         public static string Resize_Vertical = "resize_vertical";
         public static string Text = "text";
         public static string Unavailable = "unavailable";
-
     }
 
     public class Token_Dark_Cursors
@@ -2375,7 +2197,6 @@ public static string Link_1 = "Link_1";
         public static string Resize_Vertical = "resize_vertical";
         public static string Text = "text";
         public static string Unavailable = "unavailable";
-
     }
 
     public class Token_Light_Inspired_Cursors
@@ -2389,15 +2210,14 @@ public static string Link_1 = "Link_1";
         public static string Unavailable = "08_unavailable";
         public static string Vertical_Resize = "09_vertical_resize";
         public static string Horizontal_Resize = "10_horizontal_resize";
-        public static string Diagonal_Resize = "11_diagonal_resize";
-        // public static string Diagonal_Resize = "12_diagonal_resize";
+        public static string Diagonal_Resize_11 = "11_diagonal_resize";
+        public static string Diagonal_Resize_12 = "12_diagonal_resize";
         public static string Text = "13_text";
         public static string Up = "14_up";
         public static string Link_01 = "15_link_01";
         public static string Link_02 = "16_link_02";
         public static string Link_03 = "17_link_03";
         public static string Link_04 = "18_link_04";
-
     }
 
     public class Volta_Ringlets
@@ -2408,7 +2228,6 @@ public static string Link_1 = "Link_1";
             public static string Alternate_Select = "volta ringlets alternate select";
             public static string Handwriting = "volta ringlets handwriting";
             public static string Normal_Select = "volta ringlets normal select";
-
         }
 
         public class Non_Animated
@@ -2418,21 +2237,22 @@ public static string Link_1 = "Link_1";
             public static string Busy = "Busy";
             public static string Diagonal_Resize_1 = "Diagonal_Resize_1";
             public static string Diagonal_Resize_2 = "Diagonal_Resize_2";
-            // public static string Handwriting = "volta ringlets handwriting";
+
+            public static string Handwriting = "volta ringlets handwriting";
             public static string Help_Select = "Help_Select";
+
             public static string Horizontal_Resize = "Horizontal_Resize";
             public static string Link_Select = "Link_Select";
             public static string Move = "Move";
-            // public static string Normal_Select = "volta ringlets normal select";
+
+            public static string Normal_Select = "volta ringlets normal select";
             public static string Precision_Select = "Precision_Select";
+
             public static string Text_Select = "Text_Select";
             public static string Unavailable = "Unavailable";
             public static string Vertical_Resize = "Vertical_Resize";
             public static string Working_In_Background = "Working_In_Background";
-
         }
-
-
     }
 
     public class Yin_Yang_Cursor
@@ -2451,7 +2271,6 @@ public static string Link_1 = "Link_1";
         public static string YY7 = "YY7";
         public static string YY8 = "YY8";
         public static string YY9 = "YY9";
-
     }
 
     public class GlobalCursorDB
@@ -2521,43 +2340,40 @@ public static string Link_1 = "Link_1";
         public static string Forma_NovaSelect = "Forma_NovaSelect";
         public static string Forma_NovaUnavail = "Forma_NovaUnavail";
 
-
         private static GlobalCursorDB _db;
+
         public static GlobalCursorDB CurrentDB
         {
             get => _db = _db ?? Activator.CreateInstance<GlobalCursorDB>();
             set => _db = value;
         }
 
-        // TODO: Generate a map from reflection indexing classes into a Dictionary<MouseCursor, List<string>> where the List of strings will store the full reflected path (example: <MouseCursor.Move, Comix.Black.Move>)
-        //public static string GetCursorReference(GlobalCursorDB cursorDB, MouseCursor cursorMode)
+        // TODO: Generate a map from reflection indexing classes into a Dictionary<MouseCursor, List<string>> (save it to a JSON file, for a later load)
+        // TODO: Where the List of strings will store the full reflected path (example: <MouseCursor.Move, Comix.Black.Move>)
+        //public static string GetCursorReference(GlobalCursorDB cursorDB, MouseCursor cursorMode, int matchIndex = -1)
         //{
-
         //}
 
-        //public static string GetCursorReference(MouseCursor cursorMode)
+        //public static string GetCursorReference(MouseCursor cursorMode, int matchIndex = -1)
         //{
-
         //}
 
-        // This isn't possible yet due to "static string" fields
-        //public static string GetCursorReference(GlobalCursorDB cursorDB, string name)
+        // TODO: Get namespace+type from the expression and the parse it
+        //public static string GetCursorReference<T>(Expression<Func<string>> name)
+        //   where T : GlobalCursorDB
         //{
-
         //}
 
-        //public static string GetCursorReference(string name)
+        //public static string GetCursorReference(Expression<Func<string>> name)
         //{
-
         //}
 
         //public static string GetGlobalCursorReference(string path)
         //{
-        //    // TODO: Check if path is valid, if it's valid then search from a Dictionary<string, string> (deserialized, [path, fileName]) generated from json, and return fileName
-              // By the moment, we will use direct references from values on the nested classes, example: Comix.Black.StaticField value 
+        //   TODO: Check if path is valid, if it's valid then search from a Dictionary<string, string> (deserialized, [path, fileName]) generated from json, and return fileName
+        //   By the moment, we will use direct references from values on the nested classes, example: Comix.Black.StaticField value
         //}
     }
-
 }
 
 #endif

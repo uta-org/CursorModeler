@@ -43,7 +43,7 @@
         // Split resize left right arrows
         SplitResizeLeftRight = 19,
         Alias,
-        AllScroll,
+        All_Scroll,
         Auto,
         Cell,
         ContextMenu,

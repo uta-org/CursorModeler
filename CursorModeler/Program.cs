@@ -7,6 +7,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using TexturePacker.Lib;
 
@@ -48,11 +49,77 @@ namespace CursorModeler
             else
                 Console.WriteLine("This must be called in Visual Studio!");
 #else
+            var assembly = Assembly.GetExecutingAssembly();
 
+            int ocurrenceCount = 0;
+            var reflectionMap = new Dictionary<MouseCursor, List<string>>();
+            var enums = Enum.GetValues(typeof(MouseCursor)).Cast<MouseCursor>().Select(e => e.ToString());
+
+            foreach (var type in assembly.GetTypes())
+            {
+                if(type.Namespace == "GeneratedContent")
+                {
+                    var fields = type.GetFields(BindingFlags.Static | BindingFlags.Public);
+                    foreach (var field in fields)
+                    {
+                        string enumOcurrence = enums.FirstOrDefault(e => field.Name.Contains(e) || FindAlias(field.Name, e, type.FullName));
+                        if(enumOcurrence != null)
+                        {
+                            // Console.WriteLine($"[Type={type.FullName} | FieldName={field.Name}] EnumOcurrence={enumOcurrence}");
+                            var mouseCursor = (MouseCursor)Enum.Parse(typeof(MouseCursor), enumOcurrence);
+                            string value = $"{type.FullName}/{field.Name}";
+
+                            if (!reflectionMap.ContainsKey(mouseCursor))
+                                reflectionMap.Add(mouseCursor, new List<string>());
+
+                            reflectionMap[mouseCursor].Add(value);
+                            ++ocurrenceCount;
+                        }
+                    }
+                    // Console.WriteLine(type.FullName);
+                }
+            }
+
+            File.WriteAllText(Path.Combine(Environment.CurrentDirectory, "mouse_cursors.json"), JsonConvert.SerializeObject(reflectionMap, Formatting.Indented));
+            Console.WriteLine($"Count: {ocurrenceCount} || CheckCount: {checkCount}");
 #endif
 
             Console.WriteLine("Press any key to exit...");
             Console.Read();
+        }
+
+
+        private static int checkCount = 0;
+        private static bool FindAlias(string fieldName, string enumName, string typeName)
+        {
+            ++checkCount;
+
+            string tName = typeName.ToLowerInvariant();
+            string fName = fieldName.ToLowerInvariant();
+            string eName = enumName.ToLowerInvariant();
+
+            if (enumName.Contains("Resize") && fName.Contains("size") && !tName.Contains("oxygen") || tName.Contains("globalcursordb"))
+                enumName = enumName.Replace("_Resize", string.Empty);
+
+            if (eName == "all_scroll" && fName.Contains("all"))
+                return true;
+
+            if (eName == "crosshair" && fName.Contains("cross"))
+                return true;
+
+            if ((eName == "e_resize" || eName == "ew_resize") && fName.Contains("hor"))
+                return true;
+
+            if ((eName == "ns_resize" || eName == "n_resize") && fName.Contains("ver"))
+                return true;
+
+            if ((eName == "nw_resize" || eName == "nwse_resize") && fName.Contains("fdiag"))
+                return true;
+
+            if ((eName == "ne_resize" || eName == "nesw_resize") && fName.Contains("bdiag"))
+                return true;
+
+            return fieldName.Contains(enumName);
         }
 
         private static string EnclosingString(string prefix, string str, string suffix)
