@@ -1,4 +1,5 @@
-﻿#define REFLECTION
+﻿// #define REFLECTION
+#define TESTING
 
 using Newtonsoft.Json;
 using System;
@@ -9,6 +10,8 @@ using System.Linq;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using GeneratedContent;
+using Newtonsoft.Json.Linq;
 using TexturePacker.Lib;
 
 namespace CursorModeler
@@ -18,11 +21,12 @@ namespace CursorModeler
     public class Program
     {
         private const string ATLAS_URL = "https://gist.githubusercontent.com/z3nth10n/61389f7b6bf37d25ea4cc22eb57231ff/raw/77225b1e67da47630a1132ec369b53c0708a10cf/atlas.json";
-        private const string Replace = "E:\\VISUAL STUDIO\\Visual Studio Projects\\TexturePacker\\bin\\Debug\\png\\";
 
         public static void Main()
         {
-#if !REFLECTION
+            string jsonFile = Path.Combine(Environment.CurrentDirectory, "mouse_cursors.json");
+
+#if !REFLECTION && !TESTING
             string json;
             using (WebClient wc = new WebClient())
                 json = wc.DownloadString(ATLAS_URL);
@@ -48,11 +52,12 @@ namespace CursorModeler
             }
             else
                 Console.WriteLine("This must be called in Visual Studio!");
-#else
+#elif REFLECTION
+            {
+            }
             var assembly = Assembly.GetExecutingAssembly();
 
             int ocurrenceCount = 0;
-            var reflectionMap = new Dictionary<MouseCursor, List<string>>();
             var enums = Enum.GetValues(typeof(MouseCursor)).Cast<MouseCursor>().Select(e => e.ToString());
 
             foreach (var type in assembly.GetTypes())
@@ -69,10 +74,10 @@ namespace CursorModeler
                             var mouseCursor = (MouseCursor)Enum.Parse(typeof(MouseCursor), enumOcurrence);
                             string value = $"{type.FullName}/{field.Name}";
 
-                            if (!reflectionMap.ContainsKey(mouseCursor))
-                                reflectionMap.Add(mouseCursor, new List<string>());
+                            if (!GlobalCursorDB.Map.ContainsKey(mouseCursor))
+                                GlobalCursorDB.Map.Add(mouseCursor, new List<string>());
 
-                            reflectionMap[mouseCursor].Add(value);
+                            GlobalCursorDB.Map[mouseCursor].Add(value);
                             ++ocurrenceCount;
                         }
                     }
@@ -80,16 +85,42 @@ namespace CursorModeler
                 }
             }
 
-            File.WriteAllText(Path.Combine(Environment.CurrentDirectory, "mouse_cursors.json"), JsonConvert.SerializeObject(reflectionMap, Formatting.Indented));
+            File.WriteAllText(jsonFile, JsonConvert.SerializeObject(GlobalCursorDB.Map, Formatting.Indented));
             Console.WriteLine($"Count: {ocurrenceCount} || CheckCount: {checkCount}");
+#elif TESTING
+            GlobalCursorDB.Map =
+                // (Dictionary<string, List<string>>)
+                JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(File.ReadAllText(jsonFile)); //, typeof(Dictionary<string, List<string>>));
+
+            //foreach (var kv in dictionary)
+            //{
+            //    MouseCursor key = (MouseCursor)Enum.Parse(typeof(MouseCursor), kv.Key);
+
+            //    try
+            //    {
+            //        if (GlobalCursorDB.Map.ContainsKey(key))
+            //            Console.WriteLine($"Key '{kv.Key}' is already present on dictionary!");
+            //        else
+            //            GlobalCursorDB.Map.Add(key, kv.Value);
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine($"Error on key '{key}'!");
+            //    }
+            //}
+
+            // .ToDictionary(t => (MouseCursor)Enum.Parse(typeof(MouseCursor), t.Key), t => t.Value);
+
+            Console.WriteLine($"From Enum: {GlobalCursorDB.GetCursorReference(MouseCursor.Move)}");
+            Console.WriteLine($"From Generic Type: {GlobalCursorDB.GetCursorReference<Comix.Black>("Diagonal2")}");
 #endif
 
             Console.WriteLine("Press any key to exit...");
             Console.Read();
         }
 
-
         private static int checkCount = 0;
+
         private static bool FindAlias(string fieldName, string enumName, string typeName)
         {
             ++checkCount;
@@ -155,74 +186,77 @@ namespace CursorModeler
         private static Tuple<string, string> GetName(string name)
         {
             string fileName = Path.GetFileNameWithoutExtension(name);
-
-            name = name.Replace(Replace, "");
-            name = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(name);
-            name = RemoveBy(name);
-            name = name
-                .Replace(" ", "_")
-                .Replace("_\\", "\\")
-                .Replace("(", "")
-                .Replace(")", "")
-                .Replace("[", string.Empty)
-                .Replace("]", string.Empty);
-
-            string match = string.Empty;
-
-            try
-            {
-                match = name.Substring(0, name.IndexOf(@"\"));
-            }
-            catch
-            {
-            }
-
-            if (!string.IsNullOrEmpty(match))
-            {
-                name = name.Replace(match, "");
-                name = match + name;
-
-                name = name.Replace(@"\\", @"\");
-                name = Regex.Replace(name, @"\\.\\", "\\");
-            }
-
-            // Individual cases
-            name = name
-                .Replace("\\_", "\\")
-                .Replace("-", "_")
-                .Replace("Deviantart\\", "")
-                .Replace(@"_1_Blue\Moonshine\", @"1\Blue\")
-                .Replace(@"\Streetlight\", @"\")
-                .Replace(@"Polar_Cursor_Set_For_Windows\", string.Empty)
-                .Replace("Oxy_", string.Empty)
-                .Replace(@"\Streetlight_", "\\")
-                .Replace(@"\Deviantart_", "\\")
-                .Replace(@"Ml_Blau_Cursor__Smaller_Version_\", string.Empty)
-                .Replace(@"Ml.Blau.3\Ml_Blau_", @"Ml_Blau\")
-                .Replace(@"Grey_Tango_Cursor_Little\Grey_Tango_Little\", @"Grey_Tango_Little\")
-                .Replace(@"Google_Chrome_Os_Pointers__W_I_P__\", string.Empty)
-                .Replace(@"Forma_Nova__Xp_Cursor_Set\", "Forma_Nova")
-                .Replace(@"Extenza_Pro_Cursor_Pack", "Extenza_Pro")
-                .Replace(@"Extenza_Cursors\EXTENZA_Cursors\EXTENZA_", "Extenza")
-                .Replace(@"Denial_Cursor_Pack", "Denial")
-                .Replace(@"Denial___Blue", @"Denial\Blue")
-                .Replace(@"Comix_Cursors_Orange\Comixcursors_Orange", @"Comix\Orange")
-                .Replace(@"Comix_Cursors_Blue\Comixcursors_Blue", @"Comix\Blue")
-                .Replace(@"Comix_Cursors_Black", @"Comix\Black")
-                .Replace(@"Comix_Cursors_Black_And_Red\Comixcursors_Black_And_Red", @"Comix\RedAndBlack")
-                .Replace(@"Comix\Black_And_Red\Comixcursors_Black_And_Red", @"Comix\RedAndBack")
-                .Replace(@"Cd_Busy_For_User32.Dll\Cd_Busy", "Cd_Busy")
-                .Replace(@"A0x_Curset_1__Cur_And_Ani_Ver_\A0x_Cursors", "A0x");
-
-            name = name.Replace(@".Png", string.Empty);
-            name = name.Replace("\\", "/");
+            name = GlobalCursorDB.GetFormattedName(name);
 
             return new Tuple<string, string>(name, fileName);
         }
+    }
 
-        private static string RemoveBy(string title)
-        {
-            return Regex.Replace(title, @"By_.+?\\", "\\");
-        }
+    public static class JTokenExt
+    {
+        //public static Dictionary<string, T>
+        //    Bagify<T>(this JToken obj, string name = null)
+        //{
+        //    name = name ?? "obj";
+        //    if (obj is JObject)
+        //    {
+        //        var asBag = (obj as JObject).Properties()
+        //            .Select(prop => new { prop, propName = prop.Name })
+        //            .Select(@t => new
+        //            {
+        //                @t,
+        //                propValue = @t.prop.Value is JValue
+        //                    ? new Dictionary<string, T>() { { @t.prop.Name, @t.prop.Value.ToObject<T>() } }
+        //                    : @t.prop.Value.Bagify<T>(@t.prop.Name)
+        //            })
+        //            .Select(@t => new KeyValuePair<string, T>(@t.@t.propName, @t.propValue));
+        //        return asBag.ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
+        //    }
+        //    if (obj is JArray)
+        //    {
+        //        var vals = (obj as JArray).Values();
+        //        var alldicts = vals
+        //            .SelectMany(val => val.Bagify(name))
+        //            .Select(x => x.Value)
+        //            .ToArray();
+        //        return new Dictionary<string, object>()
+        //        {
+        //            {name, (object)alldicts}
+        //        };
+        //    }
+        //    if (obj is JValue)
+        //    {
+        //        return new Dictionary<string, object>()
+        //        {
+        //            {name, (obj as JValue)}
+        //        };
+        //    }
+        //    return new Dictionary<string, object>()
+        //    {
+        //        {name, null}
+        //    };
+        //}
+
+        //public static IDictionary<string, T> ToDictionary<T>(this JObject @object)
+        //{
+        //    var result = @object.ToObject<Dictionary<string, T>>();
+
+        //    var JObjectKeys = (from r in result
+        //                       let key = r.Key
+        //                       let value = r.Value
+        //                       where value.GetType() == typeof(JObject)
+        //                       select key).ToList();
+
+        //    var JArrayKeys = (from r in result
+        //                      let key = r.Key
+        //                      let value = r.Value
+        //                      where value.GetType() == typeof(JArray)
+        //                      select key).ToList();
+
+        //    JArrayKeys.ForEach(key => result[key] = ((JArray)(object)result[key]).Values().Select(x => ((JValue)x).Value).ToArray());
+        //    JObjectKeys.ForEach(key => result[key] = ToDictionary(result[key] as JObject));
+
+        //    return result;
+        //}
     }
 }

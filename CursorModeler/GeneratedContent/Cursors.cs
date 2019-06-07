@@ -1,5 +1,3 @@
-using System;
-
 #if IS_POC
 
 namespace GeneratedContent
@@ -2159,8 +2157,6 @@ namespace GeneratedContent
             public static string Vertical_2 = "Vertical_2";
             public static string Vertical_3 = "Vertical_3";
         }
-
-
     }
 
     public class Token_Light_Cursors
@@ -2273,7 +2269,7 @@ namespace GeneratedContent
         public static string YY9 = "YY9";
     }
 
-    public class GlobalCursorDB
+    public partial class GlobalCursorDB
     {
         public static string Aero_Arrow = "Aero_Arrow";
         public static string Aero_Arrow_L = "Aero_Arrow_L";
@@ -2339,40 +2335,6 @@ namespace GeneratedContent
         public static string Forma_NovaPrec = "Forma_NovaPrec";
         public static string Forma_NovaSelect = "Forma_NovaSelect";
         public static string Forma_NovaUnavail = "Forma_NovaUnavail";
-
-        private static GlobalCursorDB _db;
-
-        public static GlobalCursorDB CurrentDB
-        {
-            get => _db = _db ?? Activator.CreateInstance<GlobalCursorDB>();
-            set => _db = value;
-        }
-
-        // TODO: Generate a map from reflection indexing classes into a Dictionary<MouseCursor, List<string>> (save it to a JSON file, for a later load)
-        // TODO: Where the List of strings will store the full reflected path (example: <MouseCursor.Move, Comix.Black.Move>)
-        //public static string GetCursorReference(GlobalCursorDB cursorDB, MouseCursor cursorMode, int matchIndex = -1)
-        //{
-        //}
-
-        //public static string GetCursorReference(MouseCursor cursorMode, int matchIndex = -1)
-        //{
-        //}
-
-        // TODO: Get namespace+type from the expression and the parse it
-        //public static string GetCursorReference<T>(Expression<Func<string>> name)
-        //   where T : GlobalCursorDB
-        //{
-        //}
-
-        //public static string GetCursorReference(Expression<Func<string>> name)
-        //{
-        //}
-
-        //public static string GetGlobalCursorReference(string path)
-        //{
-        //   TODO: Check if path is valid, if it's valid then search from a Dictionary<string, string> (deserialized, [path, fileName]) generated from json, and return fileName
-        //   By the moment, we will use direct references from values on the nested classes, example: Comix.Black.StaticField value
-        //}
     }
 }
 
